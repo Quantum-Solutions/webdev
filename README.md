@@ -25,7 +25,13 @@ To get started with development on this repo, run the following commands:
 
 This project is using Firebase as a database.
 
-### Setting up Firebase for use with C
+The `DatabaseHelper` (`Helpers/DatabaseHelper.cs`) class acts as a layer between the application and the database. This class is used to retrieve data from the database, store it in the necessary model, and return that back to the calling method.
+
+Methods:
+
+- `GetUser(string userId)` takes the ID of a user and retrieves that user's information from the database, or `null` if the user doesn't exist. If the user does exist, it populates the `User` model and returns it.
+
+### Setting up Firebase for use with C#
 
 The following code sets up the database for use with C#:
 
