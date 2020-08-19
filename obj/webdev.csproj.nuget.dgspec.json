@@ -43,15 +43,9 @@
               "target": "Package",
               "version": "[4.0.4, )"
             },
-            "Microsoft.EntityFrameworkCore": {
+            "Google.Cloud.Firestore": {
               "target": "Package",
-              "version": "[3.1.5, )"
-            },
-            "Microsoft.EntityFrameworkCore.Design": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[3.1.5, )"
+              "version": "[2.1.0, )"
             }
           },
           "imports": [
