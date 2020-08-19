@@ -23,11 +23,39 @@ To get started with development on this repo, run the following commands:
 
 ## Database
 
-Firebase is being used as the database for this project
+This project is using Firebase as a database.
+
+### Setting up Firebase for use with C
+
+The following code sets up the database for use with C#:
+
+```C#
+string path = AppDomain.CurrentDomain.BaseDirectory + "wil-dev-firebase-adminsdk-strge-722cdc9511.json";
+
+Environment.SetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS", path);
+```
+
+### Reading data from Firebase
+
+The following code is an example of how to retrieve a user's first name from the database, given their user ID (which is the ID of the collection):
+
+```C#
+// "wil-dev" is the name of the Firebase project
+FirestoreDb db = FirestoreDb.Create("wil-dev");
+
+// The ID of the document is the ID of the user
+DocumentReference doc = db.Collection("users").Document("<user-id>");
+DocumentSnapshot snapshot = await doc.GetSnapshotAsync();
+
+// Get the user's first name from the database
+string firstName = snapshot.GetValue<string>("first_name");
+```
+
+More information on how to use Firebase with C# can be found [in the docs](https://googleapis.github.io/google-cloud-dotnet/docs/Google.Cloud.Firestore/)
 
 ### Note
 
-There is no need for migrations in this projects since we are using Firebase and the database has already been setup in the [Firebase console](https://console.firebase.google.com)
+There is no need for migrations in this project since we are using Firebase and the database has already been setup in the [Firebase console](https://console.firebase.google.com)
 
 ## Useful commands
 
