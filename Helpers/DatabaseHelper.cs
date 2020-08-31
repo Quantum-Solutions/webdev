@@ -1,8 +1,8 @@
 using Google.Cloud.Firestore;
 using System;
-using System.Diagnostics;
+using System.Collections.Generic;
 using System.Threading.Tasks;
-using webdev.Models;
+using webdev.utils;
 
 namespace webdev.Helpers
 {
@@ -29,7 +29,7 @@ namespace webdev.Helpers
             string path = AppDomain.CurrentDomain.BaseDirectory + "wil-dev-firebase-adminsdk-strge-722cdc9511.json";
 
             Environment.SetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS", path);
-            
+
             db = FirestoreDb.Create(PROJECT_ID);
         }
 
@@ -40,22 +40,24 @@ namespace webdev.Helpers
             return await doc.GetSnapshotAsync();
         }
 
-        public async Task<User> GetUser(string userId)
+        // Takes a DocumentSnapshot and populates the class object `_class`' properties with the data inside the DocumentSnapshot
+        public void MakeData(object _class, DocumentSnapshot snapshot)
         {
-            DocumentSnapshot snapshot = await GetDocumentSnapshot(USERS_COLLECTION, userId);
+            if (_class == null)
+                return;
 
-            if (!snapshot.Exists)
-                return null;
+            Dictionary<string, object> snake_case_data = snapshot.ToDictionary(); // A dictionary with keys following the SnakeCase naming convention, as returned from the database
+            Dictionary<string, object> title_case_data = CollectionUtils.ConvertKeysToTitleCase(snake_case_data); // // A dictionary with keys following the TitleCase naming convention
 
-            var user = new User()
+            object value;
+
+            foreach (var propertyInfo in _class.GetType().GetProperties())
             {
-                Id = userId,
-                FirstName = snapshot.GetValue<string>("first_name"),
-                LastName = snapshot.GetValue<string>("last_name"),
-                UserType = snapshot.GetValue<string>("user_type")
-            };
-
-            return user;
+                if (title_case_data.TryGetValue(propertyInfo.Name, out value))
+                {
+                    propertyInfo.SetValue(_class, value);
+                }
+            }
         }
     }
 }
