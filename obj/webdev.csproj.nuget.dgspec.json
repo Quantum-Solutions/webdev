@@ -1,28 +1,34 @@
 {
   "format": 1,
   "restore": {
-    "/home/aaron/Desktop/Aaron/vc/Year 3/Semester 2/WIL/webdev/webdev.csproj": {}
+    "C:\\Users\\Keegan\\Documents\\GitHubMain\\WebDev\\webdev.csproj": {}
   },
   "projects": {
-    "/home/aaron/Desktop/Aaron/vc/Year 3/Semester 2/WIL/webdev/webdev.csproj": {
+    "C:\\Users\\Keegan\\Documents\\GitHubMain\\WebDev\\webdev.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/aaron/Desktop/Aaron/vc/Year 3/Semester 2/WIL/webdev/webdev.csproj",
+        "projectUniqueName": "C:\\Users\\Keegan\\Documents\\GitHubMain\\WebDev\\webdev.csproj",
         "projectName": "webdev",
-        "projectPath": "/home/aaron/Desktop/Aaron/vc/Year 3/Semester 2/WIL/webdev/webdev.csproj",
-        "packagesPath": "/home/aaron/.nuget/packages/",
-        "outputPath": "/home/aaron/Desktop/Aaron/vc/Year 3/Semester 2/WIL/webdev/obj/",
+        "projectPath": "C:\\Users\\Keegan\\Documents\\GitHubMain\\WebDev\\webdev.csproj",
+        "packagesPath": "C:\\Users\\Keegan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Keegan\\Documents\\GitHubMain\\WebDev\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "/usr/share/dotnet/sdk/NuGetFallbackFolder"
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "/home/aaron/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Keegan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 19.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\DevExpress 19.2\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -66,7 +72,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.302/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

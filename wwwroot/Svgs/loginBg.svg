@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1919.951" height="506.01" viewBox="0 0 1919.951 506.01">
+  <g id="loginBg" transform="translate(0 -574.621)">
+    <g id="loginBg-2" data-name="loginBg">
+      <g id="leftLoginShape">
+        <path id="Path_263" data-name="Path 263" d="M0,811.016v181.46l88.155,88.155H391.093l177.4-177.4L239.878,574.621Z" fill="#e1e1e1"/>
+        <rect id="Rectangle_13" data-name="Rectangle 13" width="23" height="466" transform="translate(182.008 632.046) rotate(-45)" fill="#eee"/>
+        <rect id="Rectangle_14" data-name="Rectangle 14" width="23" height="469" transform="translate(151.543 659.581) rotate(-45)" fill="#eee"/>
+      </g>
+      <g id="loginRightShape">
+        <g id="Group_38" data-name="Group 38">
+          <path id="Path_266" data-name="Path 266" d="M1363.229,1080h495.6l61.121-168.709V799.914L1523.065,651.776Z" fill="#e2e2e2"/>
+          <circle id="Ellipse_7" data-name="Ellipse 7" cx="24" cy="24" r="24" transform="translate(1548 776)" fill="#eee"/>
+          <circle id="Ellipse_8" data-name="Ellipse 8" cx="24" cy="24" r="24" transform="translate(1609 776)" fill="#eee"/>
+          <circle id="Ellipse_9" data-name="Ellipse 9" cx="24" cy="24" r="24" transform="translate(1670 776)" fill="#ededed"/>
+          <rect id="Rectangle_17" data-name="Rectangle 17" width="398" height="27" rx="13.5" transform="translate(1482 904)" fill="#ededed"/>
+        </g>
+      </g>
+    </g>
+    <g id="mid">
+      <path id="Path_264" data-name="Path 264" d="M722.5,1080.631h469.666l17.53-105.509L750.256,902.81Z" fill="#e2e2e2"/>
+      <path id="Polygon_1" data-name="Polygon 1" d="M83.5,0,167,86H0Z" transform="matrix(0.809, -0.588, 0.588, 0.809, 716.951, 998.741)" fill="#ededed"/>
+      <path id="Path_265" data-name="Path 265" d="M4807.865,1080l186.281-136.061L4960,939.185,4768.535,1080Z" transform="translate(-3980)" fill="#ededed"/>
+    </g>
+  </g>
+</svg>
