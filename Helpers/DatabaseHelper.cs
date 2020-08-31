@@ -2,6 +2,7 @@ using Google.Cloud.Firestore;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using webdev.Database;
 using webdev.Utils;
 
 namespace webdev.Helpers
@@ -12,6 +13,7 @@ namespace webdev.Helpers
         private const string USERS_COLLECTION = "users";
         private FirestoreDb db;
         private static DatabaseHelper databaseHelper;
+        public UserHandler User { get; set; }
 
         public static DatabaseHelper GetInstance()
         {
@@ -31,6 +33,7 @@ namespace webdev.Helpers
             Environment.SetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS", path);
 
             db = FirestoreDb.Create(PROJECT_ID);
+            User = new UserHandler(db);
         }
 
         private async Task<DocumentSnapshot> GetDocumentSnapshot(string collection, string documentId)
@@ -41,7 +44,7 @@ namespace webdev.Helpers
         }
 
         // Takes a DocumentSnapshot and populates the class object `_class`' properties with the data inside the DocumentSnapshot
-        public void MakeData(object _class, DocumentSnapshot snapshot)
+        public static void MakeData(object _class, DocumentSnapshot snapshot)
         {
             if (_class == null)
                 return;
