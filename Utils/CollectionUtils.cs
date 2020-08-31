@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace webdev.utils
+namespace webdev.Utils
 {
     public class CollectionUtils
     {
