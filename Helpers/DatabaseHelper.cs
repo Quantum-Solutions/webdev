@@ -2,7 +2,7 @@ using Google.Cloud.Firestore;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using webdev.utils;
+using webdev.Utils;
 
 namespace webdev.Helpers
 {

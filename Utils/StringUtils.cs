@@ -1,6 +1,6 @@
 using System.Globalization;
 
-namespace webdev.utils
+namespace webdev.Utils
 {
     public class StringUtils
     {
