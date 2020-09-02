@@ -28,7 +28,7 @@ namespace webdev.Helpers
 
         private void SetupDatabase()
         {
-            string path = AppDomain.CurrentDomain.BaseDirectory + "wil-dev-firebase-adminsdk-strge-722cdc9511.json";
+            string path = AppDomain.CurrentDomain.BaseDirectory + "wil-dev-firebase-adminsdk-strge-e35e1cfaec.json";
 
             Environment.SetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS", path);
 
