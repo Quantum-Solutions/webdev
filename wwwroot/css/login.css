@@ -27,8 +27,8 @@ html, body{
     max-width:90%
 }
 
-.container{
-    padding-top: 10vh;
+.login-container{
+    padding-top: 6vh;
 }
 
 label {
@@ -37,100 +37,13 @@ label {
 
 
 
-/* Nav Styling */
-
-
-
-.navbarSpacing{
-    margin: 0px 7% 0 2%;
-    max-width: 95%;
-}
-
-.navContainer {
-    padding-top: 3vh;
-}
-.leftnavSect a{
-float: left;
-}
-
-.navLeftBtns{
-    float: left;
-}
-
-.navRightBtns img{
-    display: inherit;
-}
-
-.navRightBtns {
-    float: right;
-    margin-left: 3vh;
-}
-
-.rightNavBar{
-    float: right;
-}
-
-.rightNavBar a {
-    margin-left: 7vh;
-    font-size: 20px;
-    font-family: Tahoma;
-    color: black;
-}
-
-.leftInnerContainer{
-    padding-top: 5vh;
-}
-.leftnavSect a {
-    font-size: 37px;
-    font-family: Calisto MT;
-    font-weight: bold;
-    color: black;
-}
-
-.logo {
-    margin-top: -1vh;
-    margin-right: 3vh;
-}
-
-.mainBtns{
-    border: black;
-    border-style: solid;
-    border-width: 2px;
-    padding: 5px 0px;
-    background-color: white;
-    width: 18vh;
-    text-align: center;
-    /* min-width: 8vh; */
-    display: inline-block;
-}
-
-.botNavSvg{
-    position: absolute;
-    top: 9vh;
-    right: 5vh;
-}
-
-.leftTri{
-    position: absolute;
-    left: 0;
-    bottom: 0;
-}
-
-.rightTri{
-    position: absolute;
-    right: 0;
-    bottom: 0;
-}
-
-
-
  /* Login Styling */
 
 
  .loginSection {
-    height: 100vh;
+    /* height: 100vh; */
     position: relative;
-    background: #eeeeee;
+    /* background: #eeeeee; */
     /* z-index: -2; */
 }
  .loginHeader h1{
@@ -154,16 +67,15 @@ float: left;
     
     display: grid;
     grid-template-columns: .4fr .6fr;
-    margin: 6% 0% 0 10%;
+    margin: 0 0 0 10%;
     column-gap: 15vh;
-    position: relative;
-    z-index: 1;
+    height: 60vh;
 }
 
 
 .loginSVG img {
-    /* width: 75vh; */
-    width: 85%;
+    width: 75vh;
+    /* width: 85%; */
 }
 
 .loginBG{
@@ -193,4 +105,55 @@ float: left;
     font-size: 18px;
     font-family: Nirmala UI;
     color: #797979;
+}
+/* 
+.loginSection{
+    background-image: url(../Images/loginBGG.png);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+ } */
+
+ .loginBack{
+    background-image: url(../Images/loginBGG.png);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+ }
+
+ .leftInnerContainer{
+    padding-top: 8vh;
+ }
+
+
+ @media screen and (max-width:1450px){
+
+    .loginSVG img {
+    width: 70vh;
+    }
+
+
+    .loginHeader h1 {
+        font-size: 50px;
+        
+    }
+
+    .loginGrid {
+        column-gap: 10vh;  
+    }
+
+}
+
+@media screen and (max-width:1280px){
+
+    .loginGrid {
+        margin: 0 0 0 2%;
+       
+    }
+
+    .btnForgot {
+        display: block;
+        margin-top: 2vh;
+    }
+
 }
