@@ -28,7 +28,7 @@ html, body{
 }
 
 .container{
-    /* padding-top: 13vh; */
+    padding-top: 6vh;
 }
 
 label {
@@ -41,7 +41,7 @@ label {
 
 .homeSection{
     
-    height: 100vh;
+    /* height: 100vh; */
 
 }
 
@@ -110,7 +110,7 @@ float: left;
     
     display: grid;
     grid-template-rows: .5fr .2fr;
-    margin: 14% 14% 0;
+    margin: 6% 14% 0;
   
 }
 
@@ -142,9 +142,9 @@ float: left;
 }
 
 .botNavSvg{
-    position: absolute;
-    top: 9vh;
-    right: 5vh;
+    position: relative;
+    top: -2vh;
+    left: 15vh;
 }
 
 .leftTri{
@@ -159,8 +159,65 @@ float: left;
     bottom: 0;
 }
 
-.homeSection{
-    background-image: url(../Images/homeBG2.jpg);
+.homeSec{
+    background-image: url(../Images/homeBG.png);
     background-size: cover;
     background-position: center;
+    height: 100vh;
  }
+
+ .botNavSvg img {
+    width: 96%;
+}
+
+/* Screen Sizing */
+@media screen and (min-width:1920px){
+
+}
+
+
+@media screen and (max-width:1650px){
+    .navbarSpacing {
+        margin: 0px 0% 0 2%;
+       
+    }
+
+    .rightNavBar a {
+        margin-left: 4vh;
+        font-size: 18px;
+       
+    }
+
+    .leftnavSect a {
+        font-size: 32px;
+        
+    }
+
+    .homeCard1 h2 {
+        font-size: 58px;
+    }
+
+    .homeCard1 h1 {
+        font-size: 72px;
+    }
+
+
+}
+
+@media screen and (max-width:1350px){
+    .navLeftBtns {
+        float: none;
+    }
+
+    .navRightBtns {
+        margin-top: 2vh;
+    }
+
+    .botNavSvg {
+        top: 1vh;  
+    }
+
+    .homeGrid {
+        margin: 6% 8% 0;
+    }
+}
