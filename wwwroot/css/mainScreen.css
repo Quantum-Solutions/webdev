@@ -145,6 +145,7 @@ float: left;
     position: relative;
     top: -2vh;
     left: 15vh;
+    z-index: -1;
 }
 
 .leftTri{

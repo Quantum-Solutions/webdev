@@ -1,0 +1,196 @@
+/* Main Styling */
+html, body{
+    scroll-behavior: smooth;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+   
+}
+
+* img{
+    display: block;
+}
+
+* svg{
+    width: 100%;
+}
+
+.spacing{
+    margin: 0px 5% 0 5%;
+    max-width:90%
+}
+
+.container{
+    padding-top: 10vh;
+}
+
+label {
+    display: block;
+}
+
+
+
+/* Nav Styling */
+
+
+
+.navbarSpacing{
+    margin: 0px 7% 0 2%;
+    max-width: 95%;
+}
+
+.navContainer {
+    padding-top: 3vh;
+}
+.leftnavSect a{
+float: left;
+}
+
+.navLeftBtns{
+    float: left;
+}
+
+.navRightBtns img{
+    display: inherit;
+}
+
+.navRightBtns {
+    float: right;
+    margin-left: 3vh;
+}
+
+.rightNavBar{
+    float: right;
+}
+
+.rightNavBar a {
+    margin-left: 7vh;
+    font-size: 20px;
+    font-family: Tahoma;
+    color: black;
+}
+
+.leftInnerContainer{
+    padding-top: 5vh;
+}
+.leftnavSect a {
+    font-size: 37px;
+    font-family: Calisto MT;
+    font-weight: bold;
+    color: black;
+}
+
+.logo {
+    margin-top: -1vh;
+    margin-right: 3vh;
+}
+
+.mainBtns{
+    border: black;
+    border-style: solid;
+    border-width: 2px;
+    padding: 5px 0px;
+    background-color: white;
+    width: 18vh;
+    text-align: center;
+    /* min-width: 8vh; */
+    display: inline-block;
+}
+
+.botNavSvg{
+    position: absolute;
+    top: 9vh;
+    right: 5vh;
+}
+
+.leftTri{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.rightTri{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+
+
+ /* Login Styling */
+
+
+ .loginSection {
+    height: 100vh;
+    position: relative;
+    background: #eeeeee;
+    /* z-index: -2; */
+}
+ .loginHeader h1{
+    font-size: 62px;
+    font-family: Nirmala UI;
+    font-weight: 300;
+    color: #5D5D5D;
+}
+
+.loginFields input{
+    font-size: 18px;
+    padding: 6px 5px;
+    border: #6b6b6b;
+    border-style: solid;
+    border-width: 2px;
+    margin-top: 2vh;
+    width: 38vh;
+}
+
+.loginGrid{
+    
+    display: grid;
+    grid-template-columns: .4fr .6fr;
+    margin: 6% 0% 0 10%;
+    column-gap: 15vh;
+    position: relative;
+    z-index: 1;
+}
+
+
+.loginSVG img {
+    /* width: 75vh; */
+    width: 85%;
+}
+
+.loginBG{
+    position: absolute;
+    bottom: 0;
+    
+}
+
+.loginFields{
+  
+        margin-bottom: 4vh;
+    
+}
+.btnLogin {
+   
+    margin: 0 auto;
+    color: #ffffff;
+    font-family: Tahoma;
+    padding: 9px 75px;
+    font-size: 19px;
+    background: #3561dc;
+    margin-right: 3vh;
+    
+}
+
+.btnForgot {
+    font-size: 18px;
+    font-family: Nirmala UI;
+    color: #797979;
+}
