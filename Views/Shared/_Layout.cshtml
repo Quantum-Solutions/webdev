@@ -3,43 +3,62 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Quatum Academia</title>
+    <title>@ViewData["Title"] - Quantum Academia</title>
+    <link rel="stylesheet" href="../css/mainScreen.css" />
     @* <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" /> *@
     @* <link rel="stylesheet" href="~/css/site.css" /> *@
 </head>
 <body>
-    @* <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Quantum Academia</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                    </ul>
+    <div class="navbarSpacing">
+        <div class="navContainer">
+
+            
+            <div class="navBar">
+                
+                <div class="leftnavSect">
+                    <a href="" class="logo"><img src="../Svgs/logo.svg" alt="Logo.svg"></a>
+                    <a href="../HTML/">Quantum Academia</a>
                 </div>
+                
+                
+                <div class="rightNavBar">
+                    <div class="navLeftBtns">
+                        <a href="../HTML/">About Us</a>
+                        <a href="../HTML/">Why Quantum?</a>
+                        <a href="../HTML/">Courses</a>
+                        <a href="../HTML/">Query Us</a>
+                        
+
+                        
+                    </div>
+                    <div class="navRightBtns">
+                      <a asp-action="Login" asp-controller="Auth" class="mainBtns">Login</a>
+                      <a asp-action="Register" asp-controller="Auth" class="mainBtns" style="margin-left: 2vh !important;">Register</a>
+                        
+                        @* <a href="../index.html#contactSection"  class="mainBtns" style="margin-left: 2vh !important;">Register</a> *@
+                    </div>
+                   
+                </div>
+                
+    
             </div>
-        </nav>
-    </header> *@
+            <div class="botNavSvg">
+                <img  src="../Svgs/navBar.svg"> 
+            </div>
+        
+    </div>
+    </div>
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
+    @* <footer class="border-top footer text-muted">
         <div class="container">
             &copy; 2020 - Quantum Solutions - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
-    </footer>
+    </footer> *@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>

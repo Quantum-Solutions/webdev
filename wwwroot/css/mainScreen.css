@@ -1,166 +1,210 @@
 /* Main Styling */
-html, body{
-    scroll-behavior: smooth;
-    width: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden;
+html,
+body {
+  scroll-behavior: smooth;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-   
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
 }
 
-* img{
-    display: block;
+* img {
+  display: block;
 }
 
-* svg{
-    width: 100%;
+* svg {
+  width: 100%;
 }
 
-.spacing{
-    margin: 0px 5% 0 5%;
-    max-width:90%
+.spacing {
+  margin: 0px 5% 0 5%;
+  max-width: 90%;
 }
 
-.container{
-    /* padding-top: 13vh; */
+.container {
+  padding-top: 6vh;
 }
 
 label {
-    display: block;
+  display: block;
 }
-
-
 
 /* mainScreen Styling */
 
-.homeSection{
-    
-    height: 100vh;
-
+.homeSection {
+  /* height: 100vh; */
 }
 
-.navbarSpacing{
-    margin: 0px 7% 0 2%;
-    max-width: 95%;
+.navbarSpacing {
+  margin: 0px 7% 0 2%;
+  max-width: 95%;
 }
 
 .navContainer {
-    padding-top: 3vh;
+  padding-top: 3vh;
 }
-.leftnavSect a{
-float: left;
-}
-
-.navLeftBtns{
-    float: left;
+.leftnavSect a {
+  float: left;
 }
 
-.navRightBtns img{
-    display: inherit;
+.navLeftBtns {
+  float: left;
+}
+
+.navRightBtns img {
+  display: inherit;
 }
 
 .navRightBtns {
-    float: right;
-    margin-left: 3vh;
+  float: right;
+  margin-left: 3vh;
 }
 
-.rightNavBar{
-    float: right;
+.rightNavBar {
+  float: right;
 }
 
 .rightNavBar a {
-    margin-left: 7vh;
-    font-size: 20px;
-    font-family: Tahoma;
-    color: black;
+  margin-left: 7vh;
+  font-size: 20px;
+  font-family: Tahoma;
+  color: black;
 }
 
 .leftnavSect a {
-    font-size: 37px;
-    font-family: Calisto MT;
-    font-weight: bold;
-    color: black;
+  font-size: 37px;
+  font-family: Calisto MT;
+  font-weight: bold;
+  color: black;
 }
 
 .logo {
-    margin-top: -1vh;
-    margin-right: 3vh;
+  margin-top: -1vh;
+  margin-right: 3vh;
 }
 
-.mainBtns{
-    border: black;
-    border-style: solid;
-    border-width: 2px;
-    padding: 5px 0px;
-    background-color: white;
-    width: 18vh;
-    text-align: center;
-    /* min-width: 8vh; */
-    display: inline-block;
+.mainBtns {
+  border: black;
+  border-style: solid;
+  border-width: 2px;
+  padding: 5px 0px;
+  background-color: white;
+  width: 18vh;
+  text-align: center;
+  /* min-width: 8vh; */
+  display: inline-block;
 }
 
-
-.homeGrid{
-    
-    display: grid;
-    grid-template-rows: .5fr .2fr;
-    margin: 14% 14% 0;
-  
+.homeGrid {
+  display: grid;
+  grid-template-rows: 0.5fr 0.2fr;
+  margin: 6% 14% 0;
 }
 
 .getEnrolled {
-    display: block;
-    width: fit-content;
-    margin: 0 auto;
-    color: #FF8800;
-    font-family: Tahoma;
-    border: #FF8800;
-    border-style: solid;
-    padding: 12px 50px;
-    font-size: 19px;
-    margin-top: 1vh;
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+  color: #ff8800;
+  font-family: Tahoma;
+  border: #ff8800;
+  border-style: solid;
+  padding: 12px 50px;
+  font-size: 19px;
+  margin-top: 1vh;
 }
 
-.homeCard1 h2{
-    font-size: 62px;
-    font-family: Nirmala UI;
-    font-weight: 300;
-    color: #5D5D5D;
+.homeCard1 h2 {
+  font-size: 62px;
+  font-family: Nirmala UI;
+  font-weight: 300;
+  color: #5d5d5d;
 }
 
-.homeCard1 h1{
-    font-size: 76px;
-    font-family: Calisto MT;
-    color: #2D7DD2;
-    font-weight: bold;
+.homeCard1 h1 {
+  font-size: 76px;
+  font-family: Calisto MT;
+  color: #2d7dd2;
+  font-weight: bold;
 }
 
-.botNavSvg{
-    position: absolute;
-    top: 9vh;
-    right: 5vh;
+.botNavSvg {
+  position: relative;
+  top: -2vh;
+  left: 15vh;
+  z-index: -1;
 }
 
-.leftTri{
-    position: absolute;
-    left: 0;
-    bottom: 0;
+.leftTri {
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 
-.rightTri{
-    position: absolute;
-    right: 0;
-    bottom: 0;
+.rightTri {
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 
-.homeSection{
-    background-image: url(../Images/homeBG2.jpg);
-    background-size: cover;
-    background-position: center;
- }
+.homeSec {
+  background-image: url(../Images/homeBG.png);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.botNavSvg img {
+  width: 96%;
+}
+
+/* Screen Sizing */
+@media screen and (min-width: 1920px) {
+}
+
+@media screen and (max-width: 1650px) {
+  .navbarSpacing {
+    margin: 0px 0% 0 2%;
+  }
+
+  .rightNavBar a {
+    margin-left: 4vh;
+    font-size: 18px;
+  }
+
+  .leftnavSect a {
+    font-size: 32px;
+  }
+
+  .homeCard1 h2 {
+    font-size: 58px;
+  }
+
+  .homeCard1 h1 {
+    font-size: 72px;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  .navLeftBtns {
+    float: none;
+  }
+
+  .navRightBtns {
+    margin-top: 2vh;
+  }
+
+  .botNavSvg {
+    top: 1vh;
+  }
+
+  .homeGrid {
+    margin: 6% 8% 0;
+  }
+}
