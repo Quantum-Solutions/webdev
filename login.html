@@ -1,16 +1,39 @@
-@{
-    ViewData["Title"] = "Login";
-}
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/mainScreen.css" />
-    <link rel="stylesheet" href="../css/login.css" />
+    <link rel="stylesheet" href="css/mainScreen.css" />
+    <link rel="stylesheet" href="css/login.css" />
 
     <title>Academia Login</title>
 </head>
 <body class="loginBack">
+    <div class="navbarSpacing">
+        <div class="navContainer">
+            <div class="navBar">
+                <div class="leftnavSect">
+                    <a href="/" class="logo"><img src="images/svgs/logo.svg" alt="Logo.svg"></a>
+                    <a href="/">Quantum Academia</a>
+                </div>
+    
+                <div class="rightNavBar">
+                    <div class="navLeftBtns">
+                        <a href="#">About Us</a>
+                        <a href="#">Why Quantum?</a>
+                        <a href="#">Courses</a>
+                        <a href="#">Query Us</a>
+                    </div>
+                    <div class="navRightBtns">
+                        <a href="login.html" class="mainBtns">Login</a>
+                        <a href="register.html" class="mainBtns" style="margin-left: 2vh !important;">Register</a>
+                    </div>
+                </div>
+            </div>
+            <div class="botNavSvg">
+                <img src="images/svgs/navBar.svg">
+            </div>
+        </div>
+    </div>
+
     <!-- Login -->
     <section class="loginSection">
         <div class="spacing">
@@ -42,7 +65,7 @@
 
                     <div class="rightInnerContainer">
                         <div class="loginSVG">
-                            <img src="../Svgs/loginSVG.svg"> 
+                            <img src="images/svgs/loginSVG.svg"> 
                         </div>
                     </div>
                 </div>
@@ -50,10 +73,10 @@
         </div>
     </section>
     
-    
-    @section scripts {
-    <script src="~/js/api/http-client.js"></script>
-    <script src="~/js/api/auth-service.js"></script>
-    <script src="~/js/auth/login.js"></script>
-    }
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/api/http-client.js"></script>
+    <script src="js/api/auth-service.js"></script>
+    <script src="js/site.js"></script>
+    <script src="js/auth/login.js"></script>
 </body>

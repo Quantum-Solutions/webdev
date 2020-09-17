@@ -115,7 +115,7 @@ label {
  } */
 
  .loginBack{
-    background-image: url(../Images/loginBGG.png);
+    background-image: url(../images/backgrounds/loginBGG.png);
     background-size: cover;
     background-position: center;
     height: 100vh;
