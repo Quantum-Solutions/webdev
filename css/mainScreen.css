@@ -154,7 +154,7 @@ label {
 }
 
 .homeSec {
-  background-image: url(../Images/homeBG.png);
+  background-image: url(../images/backgrounds/homeBG.png);
   background-size: cover;
   background-position: center;
   height: 100vh;
