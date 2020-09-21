@@ -1,143 +1,243 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="css/mainScreen.css" />
-    <link rel="stylesheet" href="css/login.css" />
-    <title>Academia Login</title>
-</head>
-<body class="loginBack">
-    <section class="registerSection">
-        <div class="navbarSpacing">
-            <div class="navContainer">
-                <div class="navBar">
-                    <div class="leftnavSect">
-                        <a href="/" class="logo"><img src="images/svgs/logo.svg" alt="Logo.svg"></a>
-                        <a href="/">Quantum Academia</a>
-                    </div>
-        
-                    <div class="rightNavBar">
-                        <div class="navLeftBtns">
-                            <a href="#">About Us</a>
-                            <a href="#">Why Quantum?</a>
-                            <a href="#">Courses</a>
-                            <a href="#">Query Us</a>
-                        </div>
-                        <div class="navRightBtns">
-                            <a href="login.html" class="mainBtns">Login</a>
-                            <a href="register.html" class="mainBtns" style="margin-left: 2vh !important;">Register</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="botNavSvg">
-                    <img src="images/svgs/navBar.svg">
-                </div>
-            </div>
-        </div>
-
-        <div class="spacing">
-            <div class="register-container">
-                <div class="registerGrid">
-                    <div class="leftInnerContainer">
-                        <div class="regHeader">
-                            <h1>Student Registration</h1>
-                        </div>
-                        <div class="loginFields">
-                            <label class="rowLabel">
-                                <p>First Name</p>
-                                <input type="text" name="firstName" class="firstName" />
-                            </label>
-
-                            <label class="rowLabel">
-                                <p>Last Name</p>
-                                <input type="text" name="lastName" class="lastName"/>
-                            </label>
-                            <label class="rowLabel">
-                                <p>Email</p>
-                                <input type="text" name="email"  class="email"/>
-                            </label>
-
-                            <label class="rowLabel">
-                                <p>Password</p>
-                                <input type="password" name="password"  class="password"/>
-                            </label>
-
-                            <label class="rowLabel">
-                                <p>Password Confirm</p>
-                                <input type="password" name="passwordConfirm"  class="passwordConfirm"/>
-                            </label>
-
-                            <label class="rowLabel">
-                                <p>ID Number</p>
-                                <input type="text" name="idNum"  class="idNum"/>
-                            </label>
-
-                            <label class="rowLabel">
-                                <p>Contact No</p>
-                                <input type="text" name="contactNo" class="contactNo"/>
-                            </label>
-
-                            <label class="rowLabel">
-                                <p>Address</p>
-                                <input type="text" name="address" class="address"/>
-                            </label>
-
-                            <label class="rowLabel">
-                                <p>Gender</p>
-                                <input type="text" name="gender" class="gender"/>
-                            </label>
-
-                            <label class="rowLabel">
-                                <p></p>
-                                <a href="" class="btnNext-1">Next</a>
-                            </label>
-                        </div>
-                    </div>
-                    <div class="rightInnerContainer">
-                        <div class="loginFields">
-
-                            <label class="rowLabel">
-                                <p>Start Date</p>
-                                <input type="text" name="startDate" class="startDate" />
-                            </label>
-        
-                            <label class="rowLabel">
-                                <p>City</p>
-                                <input type="text" name="city" class="city"/>
-                            </label>
-                            
-                            <label class="rowLabel">
-                                <p>Province</p>
-                                <input type="text" name="province" class="province" />
-                            </label>
-        
-                            <label class="rowLabel">
-                                <p>ZIP code</p>
-                                <input type="text" name="zipCode" class="zipCode"/>
-                            </label>
-        
-                            <label class="rowLabel">
-                                <p>Country</p>
-                                <input type="text" name="country" class="country" />
-                            </label>
-        
-                            <label class="rowLabel">
-                                <p>Highschool</p>
-                                <input type="text" name="highschool" class="highschool"/>
-                            </label>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <script src="lib/jquery/dist/jquery.min.js"></script>
-    <script src="lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/api/http-client.js"></script>
-    <script src="js/api/auth-service.js"></script>
-    <script src="js/site.js"></script>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/mainScreen.css" />
+    <link rel="stylesheet" href="../css/register.css" />
     <script src="js/auth/register.js"></script>
-</body>
+
+    <title>Academia Register</title>
+  </head>
+
+  <body class="registerBack">
+    <div class="navbarSpacing">
+      <div class="navContainer">
+        <div class="navBar">
+          <div class="leftnavSect">
+            <a href="/" class="logo"
+              ><img src="images/svgs/logo.svg" alt="Logo.svg"
+            /></a>
+            <a href="/">Quantum Academia</a>
+          </div>
+
+          <div class="rightNavBar">
+            <div class="navLeftBtns">
+              <a href="#">About Us</a>
+              <a href="#">Why Quantum?</a>
+              <a href="#">Courses</a>
+              <a href="#">Query Us</a>
+            </div>
+            <div class="navRightBtns">
+              <a href="login.html" class="mainBtns">Login</a>
+              <a
+                href="register.html"
+                class="mainBtns"
+                style="margin-left: 2vh !important"
+                >Register</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="botNavSvg">
+          <img src="images/svgs/navBar.svg" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Register -->
+    <section class="registerSection">
+      <div class="spacing">
+        <div class="container">
+          <div class="regHeader">
+            <h1>Student Registration</h1>
+          </div>
+          <div class="registerGrid-1" id="registerGrid-1">
+            <div class="leftInnerContainer">
+              <div class="loginFields">
+                <label class="rowLabel">
+                  <p>First Name</p>
+                  <input type="text" name="firstName" class="firstName" />
+                </label>
+
+                <label class="rowLabel">
+                  <p>Last Name</p>
+                  <input type="text" name="lastName" class="lastName" />
+                </label>
+                <label class="rowLabel">
+                  <p>Email</p>
+                  <input type="text" name="email" class="email" />
+                </label>
+
+                <label class="rowLabel">
+                  <p>Password</p>
+                  <input type="password" name="password" class="password" />
+                </label>
+
+                <label class="rowLabel">
+                  <p>Password Confirm</p>
+                  <input
+                    type="password"
+                    name="passwordConfirm"
+                    class="passwordConfirm"
+                  />
+                </label>
+
+                <label class="rowLabel">
+                  <p>ID Number</p>
+                  <input type="text" name="idNum" class="idNum" />
+                </label>
+
+                <label class="rowLabel">
+                  <p>Contact No</p>
+                  <input type="text" name="contactNo" class="contactNo" />
+                </label>
+
+                <label class="rowLabel">
+                  <p>Address</p>
+                  <input type="text" name="address" class="address" />
+                </label>
+
+                <label class="rowLabel">
+                  <p>Gender</p>
+                  <input type="text" name="gender" class="gender" />
+                </label>
+
+                <label class="rowLabel">
+                  <p></p>
+                  <a onclick="nextPage1()" class="btnNext-1">Next</a>
+                </label>
+              </div>
+            </div>
+
+            <div class="rightInnerContainer">
+              <div class="loginFields">
+                <label class="rowLabel">
+                  <p>Start Date</p>
+                  <input type="text" name="startDate" class="startDate" />
+                </label>
+
+                <label class="rowLabel">
+                  <p>City</p>
+                  <input type="text" name="city" class="city" />
+                </label>
+
+                <label class="rowLabel">
+                  <p>Province</p>
+                  <input type="text" name="province" class="province" />
+                </label>
+
+                <label class="rowLabel">
+                  <p>ZIP code</p>
+                  <input type="text" name="zipCode" class="zipCode" />
+                </label>
+
+                <label class="rowLabel">
+                  <p>Country</p>
+                  <input type="text" name="country" class="country" />
+                </label>
+
+                <label class="rowLabel">
+                  <p>Highschool</p>
+                  <input type="text" name="highschool" class="highschool" />
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- @* Student Marks Page *@ -->
+        <div class="container">
+          <div class="registerGrid-2" id="registerGrid-2" style="display: none">
+            <div class="leftInnerContainer">
+              <div class="loginFields">
+                <label class="rowLabel">
+                  <p>English</p>
+                  <input type="text" name="english" class="english" />
+                </label>
+
+                <label class="rowLabel">
+                  <p>First Language</p>
+                  <input type="text" name="firstAddLang" class="firstAddLang" />
+                </label>
+                <label class="rowLabel">
+                  <p>Maths/Maths Lit</p>
+                  <input type="text" name="maths" class="maths" />
+                </label>
+
+                <label class="rowLabel">
+                  <p>Sciences</p>
+                  <input type="password" name="sciences" class="sciences" />
+                </label>
+
+                <label class="rowLabel">
+                  <p>Extra 1</p>
+                  <input type="password" name="extra1" class="extra1" />
+                </label>
+
+                <label class="rowLabel">
+                  <p>Extra 2</p>
+                  <input type="text" name="extra2" class="extra2" />
+                </label>
+
+                <label class="rowLabel">
+                  <p></p>
+                  <a onclick="nextPage2()" class="btnNext-1">Next</a>
+                </label>
+              </div>
+            </div>
+            <div class="rightInnerContainer">
+              <div class="loginFields">
+                <label class="rowLabel">
+                  <p>Course of Interest</p>
+                  <input
+                    type="text"
+                    name="courseOfInterest"
+                    class="courseOfInterest"
+                  />
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- @* Confirmation Page *@ -->
+        <div class="container">
+          <div class="registerGrid-3" id="registerGrid-3" style="display: none">
+            <div class="leftInnerContainer">
+              <div class="confHeader">
+                <h1>Confirmation</h1>
+              </div>
+              <div class="confirmationFields">
+                <label class="conf1">
+                  <p>
+                    I have confirmed that my entered details are correct and
+                    accurate. All details filled in are truthful and are in the
+                    correct format that was asked.
+                  </p>
+                </label>
+
+                <label class="conf2">
+                  <p>
+                    By Agreeing to this Page, you understand what was required
+                    from you during the registration process as well as agree to
+                    the terms and conditions established by Quantum Academia.
+                  </p>
+                </label>
+                <label class="tAndC">
+                  <div class="tAndC-Container">
+                    <p>Terms & Conditions</p>
+                  </div>
+                </label>
+
+                <label class="agreeBtn">
+                  <p></p>
+                  <a onclick="nextPage2()" class="btnNext-1">Agree</a>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
