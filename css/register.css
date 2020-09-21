@@ -38,10 +38,16 @@ label {
 }
 
 /* Register Styling */
-.registerSection {
+
+.registerBack {
+  background-image: url(../Images/backgrounds/loginBGG.png);
+  background-size: cover;
+  background-position: center;
   height: 100vh;
-  position: relative;
-  background: #eeeeee;
+}
+
+.regHeader {
+  margin-left: 18vh;
 }
 
 .regHeader h1 {
@@ -61,10 +67,36 @@ label {
   width: 38vh;
 }
 
-.registerGrid {
+.loginFields2 input {
+  font-size: 18px;
+  padding: 6px 5px;
+  border: #6b6b6b;
+  border-style: solid;
+  border-width: 2px;
+  margin-top: 2vh;
+  width: 38vh;
+}
+
+.registerGrid-1 {
   display: grid;
   grid-template-columns: 0.4fr 0.6fr;
-  margin: 6% 0% 0 10%;
+  margin: 0% 0% 0 10%;
+  position: relative;
+  z-index: 1;
+}
+
+.registerGrid-2 {
+  display: grid;
+  grid-template-columns: 0.4fr 0.6fr;
+  margin: 2% 0% 0 10%;
+  position: relative;
+  z-index: 1;
+}
+
+.registerGrid-3 {
+  display: grid;
+  grid-template-columns: 0.39fr;
+  margin: 2% 0% 0 10%;
   position: relative;
   z-index: 1;
 }
@@ -78,14 +110,24 @@ label {
   max-width: 85px;
 }
 
+.loginFields2 p {
+  max-width: 85px;
+}
+
 .rowLabel {
   display: grid;
   grid-template-columns: repeat(2, 0.5fr);
   width: fit-content;
 }
 
+.rowLabel2 {
+  display: grid;
+  grid-template-columns: repeat(2, 0.5fr);
+  width: fit-content;
+}
+
 .rightInnerContainer .loginFields {
-  padding-top: 9vh;
+  /* padding-top: 9vh; */
 }
 
 .btnNext-1 {
@@ -97,4 +139,44 @@ label {
   background: #3561dc;
   margin-left: 36px;
   margin-top: 2vh;
+}
+
+/* Confirmation Page */
+
+.confHeader h1 {
+  font-size: 46px;
+  font-family: Nirmala UI;
+  font-weight: 300;
+  color: #272727;
+  text-decoration: underline;
+}
+.conf1 p {
+  font-family: Tahoma;
+  font-size: 20px;
+  margin-top: 3vh;
+}
+
+.conf2 p {
+  font-family: tahoma;
+  font-size: 19px;
+  color: #a7a7a7;
+  margin-top: 4vh;
+}
+
+.tAndC p {
+  font-family: Tahoma;
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 1vh;
+}
+.tAndC {
+  display: block;
+}
+
+.tAndC-Container {
+  text-align: center;
+}
+
+.agreeBtn {
+  margin-top: 10vh;
 }
