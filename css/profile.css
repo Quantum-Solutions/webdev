@@ -1,0 +1,84 @@
+/* Main Styling */
+html,
+body {
+  scroll-behavior: smooth;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+* img {
+  display: block;
+}
+
+* svg {
+  width: 100%;
+}
+
+.spacing {
+  margin: 0px 5% 0 5%;
+  max-width: 90%;
+}
+
+.login-container {
+  padding-top: 6vh;
+}
+
+label {
+  display: block;
+}
+
+/* Homepage Styling */
+.profileBack {
+  background-image: url(../images/svgs/profileBG.svg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.profileGrid {
+  display: grid;
+  grid-template-columns: 0.4fr 0.6fr;
+  margin: 0% 0% 0 10%;
+  position: relative;
+  z-index: 1;
+}
+
+.loginFields input {
+  font-size: 18px;
+  padding: 6px 5px;
+  border: #6b6b6b;
+  border-style: solid;
+  border-width: 2px;
+  margin-top: 2vh;
+  width: 38vh;
+}
+
+.rowLabel {
+  display: grid;
+  grid-template-columns: repeat(2, 0.5fr);
+  width: fit-content;
+}
+
+.loginFields p {
+  max-width: 85px;
+}
+
+.profHeader {
+  margin-left: 18vh;
+  margin-bottom: 5vh;
+}
+
+.profHeader h1 {
+  font-size: 62px;
+  font-family: Nirmala UI;
+  font-weight: 300;
+  color: #5d5d5d;
+}
