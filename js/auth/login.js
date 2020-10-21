@@ -23,8 +23,17 @@ $('#btnLogin').click(async function (e) {
 
 		console.log(response);
 
-		if (response.ok) location.href = '/';
-		else $('#message').text(response.message);
+		if (response.ok) {
+			const token = response.data;
+
+			SessionStorageHelper.storeJwtToken(token);
+
+			location.href = '/';
+		} else {
+			$('#message').text(response.message);
+		}
+
+		console.log(response);
 
 		$(this).text('Login');
 		$(this).prop('disabled', false);
