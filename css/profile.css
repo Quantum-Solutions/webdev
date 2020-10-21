@@ -51,7 +51,35 @@ label {
   z-index: 1;
 }
 
+.mainGrid {
+  display: grid;
+  grid-template-columns: 1fr 0.3fr;
+}
+
+.farRightContainer {
+  margin-top: 8vh;
+  position: relative;
+}
+
+/* .headerGrid {
+  display: grid;
+  grid-template-columns: 0.4fr 0.6fr;
+
+  position: relative;
+  z-index: 1;
+} */
+
 .loginFields input {
+  font-size: 18px;
+  padding: 6px 5px;
+  border: #6b6b6b;
+  border-style: solid;
+  border-width: 2px;
+  margin-top: 2vh;
+  width: 38vh;
+}
+
+.currentEmail {
   font-size: 18px;
   padding: 6px 5px;
   border: #6b6b6b;
@@ -65,6 +93,14 @@ label {
   display: grid;
   grid-template-columns: repeat(2, 0.5fr);
   width: fit-content;
+}
+
+.rightLinks {
+  display: grid;
+  grid-row-gap: 2vh;
+  margin-top: 3ch;
+  position: absolute;
+  bottom: 0;
 }
 
 .loginFields p {
@@ -81,4 +117,42 @@ label {
   font-family: Nirmala UI;
   font-weight: 300;
   color: #5d5d5d;
+}
+
+.btnUpdateDetails {
+  margin: 0 auto;
+  color: #ffffff;
+  font-family: Tahoma;
+  padding: 9px 75px;
+  font-size: 19px;
+  background: #3561dc;
+  margin-right: 3vh;
+}
+
+.updateLink {
+  text-align: center;
+  margin-top: 5vh;
+  width: 90%;
+}
+
+.rightProfGrid {
+  display: grid;
+  grid-template-columns: repeat(1, 0.5fr);
+  grid-row-gap: 3vh;
+}
+
+.btnChangeEmail,
+.btnChangePassword {
+  color: #ffffff;
+  font-family: Tahoma;
+  padding: 9px 45px;
+  font-size: 16px;
+  background: #3561dc;
+  text-align: center;
+}
+
+.rowlabel2 p {
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
 }
