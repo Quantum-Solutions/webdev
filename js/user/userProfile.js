@@ -1,17 +1,27 @@
 $(document).ready(function() {
-    
     try {
-        const response = await ;
+        const id = UserAuthHelper.getUserId();
+        const response = await apiService.getUser(id);
 
         if(response.ok){
-            //Body from the API
-           var userDetails;
+            
+            const { firstName, lastName, contactNo, address, gender, city, province, zipCode, country, course, currentEmail } = response.data;
 
-           $('#firstName').val = userDetails.firstName;
+            $('#firstName').value(firstName);
+            $('#lastName').value(lastName);
+            $('#contactNo').value(contactNo);
+            $('#address').value(address);
+            $('#gender').value(gender);
+            $('#city').value(city);
+            $('#province').value(province);
+            $('#zipCode').value(zipCode);
+            $('#country').value(country);
+            $('course').text(course);
+            $('currentEmail').text(currentEmail);
         }
 
-
+        $('#spinner').hide();
     } catch (error) {
         
     }
-  });
+});

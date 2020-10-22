@@ -32,6 +32,9 @@ class ApiService {
 				return await HttpClient.delete(fullUrl, headers);
 			default:
 				return;
+				
 		}
-	}
+		
+	}	getUser = async (id) => this.doRequest('GET', users/$, {id});
+	
 }
