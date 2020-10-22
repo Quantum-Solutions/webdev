@@ -1,76 +1,93 @@
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/mainScreen.css" />
-    <link rel="stylesheet" href="css/login.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/mainScreen.css" />
+  <link rel="stylesheet" href="css/login.css" />
 
-    <title>Academia Login</title>
+  <title>Academia Login</title>
 </head>
 <body class="loginBack">
-    <div class="navbarSpacing">
-        <div class="navContainer">
-            <div class="navBar">
-                <div class="leftnavSect">
-                    <a href="/" class="logo"><img src="images/svgs/logo.svg" alt="Logo.svg"></a>
-                    <a href="/">Quantum Academia</a>
-                </div>
-    
-                <div class="rightNavBar">
-                    <div class="navLeftBtns">
-                        <a href="#">About Us</a>
-                        <a href="#">Why Quantum?</a>
-                        <a href="#">Courses</a>
-                        <a href="#">Query Us</a>
-                    </div>
-                    <div class="navRightBtns">
-                        <a href="login.html" class="mainBtns">Login</a>
-                        <a href="register.html" class="mainBtns" style="margin-left: 2vh !important;">Register</a>
-                    </div>
-                </div>
-            </div>
-            <div class="botNavSvg">
-                <img src="images/svgs/navBar.svg">
-            </div>
+  <div class="navbarSpacing">
+    <div class="navContainer">
+      <div class="navBar">
+        <div class="leftnavSect">
+          <a href="/" class="logo"
+            ><img src="images/svgs/logo.svg" alt="Logo.svg"
+          /></a>
+          <a href="/">Quantum Academia</a>
         </div>
+
+        <div class="rightNavBar">
+          <div class="navLeftBtns">
+            <a href="#">About Us</a>
+            <a href="#">Why Quantum?</a>
+            <a href="#">Courses</a>
+            <a href="#">Query Us</a>
+          </div>
+          <div class="navRightBtns">
+            <a href="login.html" class="mainBtns">Login</a>
+            <a
+              href="register.html"
+              class="mainBtns"
+              style="margin-left: 2vh !important"
+              >Register</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="botNavSvg">
+        <img src="images/svgs/navBar.svg" />
+      </div>
     </div>
+  </div>
 
-    <!-- Login -->
-    <section class="loginSection">
-        <div class="spacing">
-            <div class="login-container">
-                <div class="loginGrid">
-                    <div class="leftInnerContainer">
-                        <div class="loginHeader">
-                            <h1>User/lecturer Login</h1>
-                        </div>
-                        <form>
-                            <p id="message"></p>
-
-                            <div class="loginFields">
-                                <label>
-                                    <input type="email" class="email" placeholder="Email" id="email" />
-                                </label>
-                                
-                                <label>
-                                    <input type="password" id="password" placeholder="Password" class="contactNo" />
-                                </label>
-                            </div>
-                        </form>
-                        
-                        <div class="loginLinks">
-                            <a href="" class="btnLogin" id="btnLogin">Login</a>
-                            <a href="" class="btnForgot">Forgot Password?</a>
-                        </div>
-                    </div>
-
-                    <div class="rightInnerContainer">
-                        <div class="loginSVG">
-                            <img src="images/svgs/loginSVG.svg"> 
-                        </div>
-                    </div>
-                </div>
+  <!-- Login -->
+  <section class="loginSection">
+    <div class="spacing">
+      <div class="login-container">
+        <div class="loginGrid">
+          <div class="leftInnerContainer">
+            <div class="loginHeader">
+              <h1>User/Lecturer Login</h1>
             </div>
+            <form>
+              <p id="message"></p>
+
+              <div class="loginFields">
+                <label>
+                  <input
+                    type="email"
+                    class="email"
+                    placeholder="Email"
+                    id="email"
+                  />
+                </label>
+
+                <label>
+                  <input
+                    type="password"
+                    id="password"
+                    placeholder="Password"
+                    class="contactNo"
+                  />
+                </label>
+              </div>
+            </form>
+
+            <div class="loginLinks">
+              <a href="" class="btnLogin" id="btnLogin">Login</a>
+              <a href="" class="btnForgot">Forgot Password?</a>
+            </div>
+          </div>
+
+          <div class="rightInnerContainer">
+            <div class="loginSVG">
+              <img src="images/svgs/loginSVG.svg" />
+            </div>
+          </div>
         </div>
+
+
     </section>
     
     <script src="lib/jquery/dist/jquery.min.js"></script>
@@ -81,4 +98,5 @@
     <script src="js/api/auth-service.js"></script>
     <script src="js/site.js"></script>
     <script src="js/auth/login.js"></script>
+      
 </body>

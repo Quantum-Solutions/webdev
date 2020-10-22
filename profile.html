@@ -1,0 +1,160 @@
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/mainScreen.css" />
+    <link rel="stylesheet" href="css/profile.css" />
+  
+    <title>Academia Login</title>
+  </head>
+  <body class="profileBack">
+    <div class="navbarSpacing">
+      <div class="navContainer">
+        <div class="navBar">
+          <div class="leftnavSect">
+            <a href="/" class="logo"
+              ><img src="images/svgs/logo.svg" alt="Logo.svg"
+            /></a>
+            <a href="/">Quantum Academia</a>
+          </div>
+  
+          <div class="rightNavBar">
+            <div class="navLeftBtns">
+              <a href="#">View Lecturer Details</a>
+              <a href="#">My Marks</a>
+              <a href="#">My Timetable</a>
+              <a href="#">Modules</a>
+            </div>
+            <div class="navRightBtns">
+              <a href="login.html" class="mainBtns">My Profile</a>
+              <a
+                href="register.html"
+                class="mainBtns"
+                style="margin-left: 2vh !important"
+                >Logout</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="botNavSvg">
+          <img src="images/svgs/navBar.svg" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Profile -->
+    <section class="profSection">
+      <div class="mainGrid">
+        <div class="container">
+          <div class="profHeader">
+            <h1>My Profile</h1>
+          </div>
+          <div class="profileGrid" id="profileGrid">
+            <div class="leftInnerContainer">
+              <div class="loginFields">
+                <label class="rowLabel">
+                  <p>First Name</p>
+                  <input type="text" name="firstName" class="firstName" id ="firstName"/>
+                </label>
+
+                <label class="rowLabel">
+                  <p>Last Name</p>
+                  <input type="text" name="lastName" class="lastName" id="lastName" />
+                </label>
+
+                <label class="rowLabel">
+                  <p>Contact No</p>
+                  <input type="text" name="contactNo" class="contactNo" id="contactNo" />
+                </label>
+
+                <label class="rowLabel">
+                  <p>Address</p>
+                  <input type="text" name="address" class="address" id="address"/>
+                </label>
+
+                <label class="rowLabel">
+                  <p>Gender</p>
+                  <input type="text" name="gender" class="gender" id="gender"/>
+                </label>
+
+
+              </div>
+            </div>
+
+            <div class="rightInnerContainer">
+              <div class="loginFields">
+
+                <label class="rowLabel">
+                  <p>City</p>
+                  <input type="text" name="city" class="city" id="city" />
+                </label>
+
+                <label class="rowLabel">
+                  <p>Province</p>
+                  <input type="text" name="province" class="province" id="province" />
+                </label>
+
+                <label class="rowLabel">
+                  <p>ZIP code</p>
+                  <input type="text" name="zipCode" class="zipCode" id="zipCode" />
+                </label>
+                
+                <label class="rowLabel">
+                  <p>Country</p>
+                  <input type="text" name="country" class="country" id="country" />
+                </label>
+                
+
+                
+              </div>
+            </div>
+          </div>
+
+          <div class="updateLink">
+            <a href="" class="btnUpdateDetails" id="btnUpdateDetails">Update Details</a>
+          </div>
+        </div>
+
+
+      <!-- Profile Right Side Info -->
+      <div class="farRightContainer">
+        <div class="rightProfGrid">
+
+          <div class="rowLabel2">
+            <p>Enrolled Course :</p><br>
+            <label id="course"> </label>
+          </div>
+
+          <div class="rowLabel2">
+            <p>Student Number :</p><br>
+            <label id="studentNumber"> </label>
+          </div>
+
+          <label class="rowLabel2">
+            <p>Current Email:</p>
+            <input type="text" name="email" class="currentEmail" id="email" />
+          </label>
+          
+          <div class="rightLinks">
+            <a href="" class="btnChangeEmail" id="btnChangeEmail">Change Email Address</a>
+            <a href="" class="btnChangePassword" id="btnChangePassword">Reset Password</a>
+          </div>
+
+          
+        </div>
+      </div>
+    
+    </div>
+
+  
+    </section>
+  
+   
+  
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/api/http-client.js"></script>
+    <script src="js/api/auth-service.js"></script>
+    <script src="js/site.js"></script>
+    <script src="js/auth/login.js"></script>
+  </body>
+  
