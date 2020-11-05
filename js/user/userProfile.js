@@ -1,27 +1,33 @@
-$(document).ready(function() {
+$(document).ready(async function() {
     try {
         const id = UserAuthHelper.getUserId();
-        const response = await apiService.getUser(id);
+        const response = await api.getUser(id);
 
         if(response.ok){
             
-            const { firstName, lastName, contactNo, address, gender, city, province, zipCode, country, course, currentEmail } = response.data;
-
-            $('#firstName').value(firstName);
-            $('#lastName').value(lastName);
-            $('#contactNo').value(contactNo);
-            $('#address').value(address);
-            $('#gender').value(gender);
-            $('#city').value(city);
-            $('#province').value(province);
-            $('#zipCode').value(zipCode);
-            $('#country').value(country);
+            const { firstName, lastName, contactNumber, address, gender, email } = response.data;
+            console.log(response.data);
+            console.log( $('#firstName'));
+            $('#firstName').val(firstName);
+            $('#lastName').val(lastName);
+            $('#contactNo').val(contactNumber);
+            $('#address').val(address);
+            $('#gender').val(gender);
+            
+            //Make 2nd API Call for username and course
+            // .value for inputs and .text for labels
             $('course').text(course);
-            $('currentEmail').text(currentEmail);
+            $('currentEmail').text(email);
+
+            $('#loadStatus').hide();
+            $('.profSection').show();
+        }
+        else{
+            console.log('Not working')
         }
 
         $('#spinner').hide();
     } catch (error) {
-        
+        console.log(error);
     }
 });

@@ -5,6 +5,8 @@ class ApiService {
 		'Content-Type': 'application/json; charset=utf-8',
 	};
 
+	apiUrl = 'https://quantum-academia-api.azurewebsites.net/api';
+
 	static instance = new this();
 	static getInstance = () => this.instance;
 
@@ -18,7 +20,7 @@ class ApiService {
 		if (url.startsWith('/')) url = url.substring(1, url.length);
 		if (!url.endsWith('/') && addTrailingSlash) url += '/';
 
-		const fullUrl = `${API_URL}/${url}`;
+		const fullUrl = `${this.apiUrl}/${url}`;
 		method = method.toUpperCase();
 
 		switch (method) {
@@ -35,6 +37,6 @@ class ApiService {
 				
 		}
 		
-	}	getUser = async (id) => this.doRequest('GET', users/$, {id});
+	}	getUser = async (id) => this.doRequest('GET', `users/${id}`, id);
 	
 }

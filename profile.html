@@ -41,8 +41,12 @@
       </div>
     </div>
 
+    <div id="loadStatus" style="font-size: larger;">
+      <label>LOADING....</label>
+    </div>
+
     <!-- Profile -->
-    <section class="profSection">
+    <section class="profSection" style="display: none;">
       <div class="mainGrid">
         <div class="container">
           <div class="profHeader">
@@ -152,9 +156,12 @@
   
     <script src="lib/jquery/dist/jquery.min.js"></script>
     <script src="lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/helpers/session-storage-helper.js"></script>
+    <script src="js/helpers/jwt-token-helper.js"></script>
     <script src="js/api/http-client.js"></script>
-    <script src="js/api/auth-service.js"></script>
+    <script src="js/api/api-service.js"></script>
+    <script src="js/helpers/user-auth-helper.js"></script>
     <script src="js/site.js"></script>
-    <script src="js/auth/login.js"></script>
+    <script src="js/user/userProfile.js"></script>
   </body>
   

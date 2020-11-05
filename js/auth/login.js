@@ -25,7 +25,7 @@ $('#btnLogin').click(async function (e) {
 
 		if (response.ok) {
 			const token = response.data;
-
+			console.log('Login Successful!!!');
 			SessionStorageHelper.storeJwtToken(token);
 
 			location.href = '/';
