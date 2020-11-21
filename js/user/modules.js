@@ -11,7 +11,7 @@ $(document).ready(async function() {
                 <th>Module Code</th>
               </thead>
               <tbody>
-                ${data.data.map(v => {
+                ${response.data.map(v => {
                   return `
                     <tr>
                       <td>${v.name}</td>
