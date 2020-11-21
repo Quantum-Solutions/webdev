@@ -23,7 +23,7 @@ $(document).ready(async function() {
             </table>
           `;
           
-          const div = $('#moduleContainer');
+          const div = $('#moduleInfo');
           div.append(table);
   
           
