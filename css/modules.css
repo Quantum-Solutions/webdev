@@ -1,0 +1,106 @@
+/* Main Styling */
+html,
+body {
+  scroll-behavior: smooth;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+* img {
+  display: block;
+}
+
+* svg {
+  width: 100%;
+}
+
+.spacing {
+  margin: 0px 5% 0 5%;
+  max-width: 90%;
+}
+
+.login-container {
+  padding-top: 6vh;
+}
+
+label {
+  display: block;
+}
+
+/* Homepage Styling */
+.homepageBack {
+  background-image: url(../images/backgrounds/StudentModules.png);
+  background-size: cover;
+  background-position: bottom;
+  height: 100vh;
+}
+
+#moduleContainer {
+  position: relative;
+}
+
+.moduleHeader {
+  position: absolute;
+  left: 39%;
+  top: 37%;
+}
+
+.moduleHeader h2 {
+  font-size: 35px;
+  font-family: Tahoma;
+  color: white;
+  font-weight: 200;
+}
+
+#moduleForeground {
+  margin: auto;
+  max-width: 43em;
+  margin-top: 10vh;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: -1;
+}
+
+#moduleInfo table {
+  margin: auto;
+  margin-top: 19vh;
+  border-collapse: collapse;
+  font-size: 0.9em;
+  font-family: Tahoma;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  font-size: 16px;
+  border-width: thin;
+  border-color: white;
+  color: white;
+}
+
+#moduleInfo table thead tr {
+  background-color: #ff8800;
+  color: #ffffff;
+  text-align: left;
+}
+
+#moduleInfo table th,
+#moduleInfo table td {
+  padding: 12px 15px;
+}
+
+@media screen and (max-width: 1650px) {
+  #moduleForeground {
+    max-width: 35em;
+    margin-top: 10vh;
+  }
+}

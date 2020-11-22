@@ -55,6 +55,15 @@ label {
 
 .navLeftBtns {
   float: left;
+  margin-top: 5px;
+}
+
+.navLeftBtns a:hover {
+  color: #3561dc !important;
+}
+
+.navLeftBtns a {
+  color: #5d5d5d !important;
 }
 
 .navRightBtns img {
@@ -71,8 +80,8 @@ label {
 }
 
 .rightNavBar a {
-  margin-left: 7vh;
-  font-size: 20px;
+  margin-left: 5vh;
+  font-size: 18px;
   font-family: Tahoma;
   color: black;
 }
@@ -175,7 +184,7 @@ label {
 
   .rightNavBar a {
     margin-left: 4vh;
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .leftnavSect a {

@@ -5,7 +5,7 @@ class ApiService {
 		'Content-Type': 'application/json; charset=utf-8',
 	};
 
-	apiUrl = 'https://quantum-academia-api.azurewebsites.net/api';
+	apiUrl = 'https://localhost:5001/api';
 
 	static instance = new this();
 	static getInstance = () => this.instance;
@@ -34,8 +34,13 @@ class ApiService {
 				return await HttpClient.delete(fullUrl, headers);
 			default:
 				return;
+				
 		}
-	}
+		
+	}	
 
-	getUser = async (id) => this.doRequest('GET', `users/${id}/`);
+	getUser = async (id) => this.doRequest('GET', `users/${id}`);
+	getModules = async (id) => this.doRequest('GET', `users/${id}/modules`);
+	getMarks = async (id) => this.doRequest('GET', `users/${id}/modules/marks`);
+	
 }

@@ -25,10 +25,10 @@ $('#btnLogin').click(async function (e) {
 
 		if (response.ok) {
 			const token = response.data;
-
+			console.log('Login Successful!!!');
 			SessionStorageHelper.storeJwtToken(token);
 
-			location.href = '/';
+			location.href = 'homepage.html';
 		} else {
 			$('#message').text(response.message);
 		}

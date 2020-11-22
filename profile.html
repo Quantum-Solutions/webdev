@@ -19,15 +19,15 @@
   
           <div class="rightNavBar">
             <div class="navLeftBtns">
-              <a href="#">View Lecturer Details</a>
-              <a href="#">My Marks</a>
+              <a href="lecturerDetails.html">View Lecturer Details</a>
+              <a href="marks.html">My Marks</a>
               <a href="#">My Timetable</a>
-              <a href="#">Modules</a>
+              <a href="modules.html">Modules</a>
             </div>
             <div class="navRightBtns">
-              <a href="login.html" class="mainBtns">My Profile</a>
+              <a href="profile.html" class="mainBtns">My Profile</a>
               <a
-                href="register.html"
+                href="index.html"
                 class="mainBtns"
                 style="margin-left: 2vh !important"
                 >Logout</a
@@ -41,8 +41,12 @@
       </div>
     </div>
 
+    <div id="loadStatus" style="font-size: larger;">
+      <label>LOADING....</label>
+    </div>
+
     <!-- Profile -->
-    <section class="profSection">
+    <section class="profSection" style="display: none;">
       <div class="mainGrid">
         <div class="container">
           <div class="profHeader">
@@ -131,7 +135,7 @@
 
           <label class="rowLabel2">
             <p>Current Email:</p>
-            <input type="text" name="email" class="currentEmail" id="email" />
+            <input type="text" name="email" class="currentEmail" id="currentEmail" />
           </label>
           
           <div class="rightLinks">
@@ -152,11 +156,16 @@
   
     <script src="lib/jquery/dist/jquery.min.js"></script>
     <script src="lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/helpers/session-storage-helper.js"></script>
+    <script src="js/helpers/jwt-token-helper.js"></script>
     <script src="js/api/http-client.js"></script>
     <script src="js/api/mock-api-service.js"></script>
     <script src="js/api/api-service.js"></script>
     <script src="js/api/service-resolver.js"></script>
     <script src="js/api/mocks/user-response.js"></script>
     <script src="js/site.js"></script>
+    <script src="js/api/api-service.js"></script>
+    <script src="js/helpers/user-auth-helper.js"></script>
+    <script src="js/user/userProfile.js"></script>
   </body>
   

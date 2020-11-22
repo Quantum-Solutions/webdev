@@ -1,16 +1,34 @@
-$(document).ready(function() {
+$(document).ready(async function() {
     try {
-        const response = await ;
+        const id = UserAuthHelper.getUserId();
+        const response = await api.getUser(id);
 
         if(response.ok){
-            //Body from the API
-            var userDetails;
+            
+            const { firstName, lastName, contactNumber, address, gender, email, username } = response.data;
+            console.log(response.data);
+            console.log( $('#firstName'));
+            $('#firstName').val(firstName);
+            $('#lastName').val(lastName);
+            $('#contactNo').val(contactNumber);
+            $('#address').val(address);
+            $('#gender').val(gender);
+            
+            //Make 2nd API Call for username and course
+            // .value for inputs and .text for labels
+            $('course').text(course);
+            $('studentNumber').val(username);
+            $('currentEmail').val(email);
 
-            $('#firstName').val = userDetails.firstName;
+            $('#loadStatus').hide();
+            $('.profSection').show();
+        }
+        else{
+            console.log('Not working')
         }
 
-
+        $('#spinner').hide();
     } catch (error) {
-        
+        console.log(error);
     }
 });
