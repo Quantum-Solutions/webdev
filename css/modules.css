@@ -47,13 +47,17 @@ label {
   position: relative;
 }
 
-#moduleHeader {
+.moduleHeader {
   position: absolute;
   left: 39%;
   top: 37%;
-  font-size: 25px;
+}
+
+.moduleHeader h2 {
+  font-size: 35px;
   font-family: Tahoma;
   color: white;
+  font-weight: 200;
 }
 
 #moduleForeground {
@@ -71,7 +75,7 @@ label {
 
 #moduleInfo table {
   margin: auto;
-  margin-top: 24vh;
+  margin-top: 19vh;
   border-collapse: collapse;
   font-size: 0.9em;
   font-family: Tahoma;

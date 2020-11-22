@@ -59,7 +59,11 @@ label {
 }
 
 .navLeftBtns a:hover {
-  background-color: yellow;
+  color: #3561dc !important;
+}
+
+.navLeftBtns a {
+  color: #5d5d5d !important;
 }
 
 .navRightBtns img {
@@ -76,8 +80,8 @@ label {
 }
 
 .rightNavBar a {
-  margin-left: 7vh;
-  font-size: 20px;
+  margin-left: 5vh;
+  font-size: 18px;
   font-family: Tahoma;
   color: black;
 }

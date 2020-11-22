@@ -5,7 +5,7 @@ $(document).ready(async function() {
 
         if(response.ok){
             
-            const { firstName, lastName, contactNumber, address, gender, email } = response.data;
+            const { firstName, lastName, contactNumber, address, gender, email, username } = response.data;
             console.log(response.data);
             console.log( $('#firstName'));
             $('#firstName').val(firstName);
@@ -17,7 +17,8 @@ $(document).ready(async function() {
             //Make 2nd API Call for username and course
             // .value for inputs and .text for labels
             $('course').text(course);
-            $('currentEmail').text(email);
+            $('studentNumber').val(username);
+            $('currentEmail').val(email);
 
             $('#loadStatus').hide();
             $('.profSection').show();

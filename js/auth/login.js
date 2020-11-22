@@ -28,7 +28,7 @@ $('#btnLogin').click(async function (e) {
 			console.log('Login Successful!!!');
 			SessionStorageHelper.storeJwtToken(token);
 
-			location.href = '/';
+			location.href = 'homepage.html';
 		} else {
 			$('#message').text(response.message);
 		}

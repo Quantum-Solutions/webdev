@@ -104,7 +104,7 @@ label {
 }
 
 .loginFields p {
-  max-width: 85px;
+  margin: auto 0;
 }
 
 .profHeader {
