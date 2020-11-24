@@ -37,7 +37,7 @@ label {
 
 /* Homepage Styling */
 .homepageBack {
-  background-image: url(../images/backgrounds/StudentModules.png);
+  background-image: url(../images/backgrounds/studentLecturerDetails.png);
   background-size: cover;
   background-position: bottom;
   height: 100vh;
@@ -51,7 +51,6 @@ label {
   position: absolute;
   left: 39%;
   top: 37%;
-  width: 21%;
 }
 
 .moduleHeader h2 {
@@ -59,25 +58,55 @@ label {
   font-family: Nirmala UI;
   color: white;
   font-weight: lighter;
-  text-align: center;
+  margin-left: 10vh;
+}
+.lectDetailsContainer {
+  max-width: 20em;
+  margin-top: 14vh;
+  position: absolute;
+  margin-left: 48vh;
+  z-index: 1;
 }
 
+.lectDetailsHeader h2 {
+  font-size: 55px;
+  font-family: Nirmala UI;
+  color: white;
+  font-weight: lighter;
+  margin-left: -2vh;
+}
+
+.detailFields p {
+  font-size: 17px;
+  font-family: Tahoma;
+  margin-right: 2vh;
+  margin-bottom: 0.5em;
+  margin-top: 2vh;
+  color: #e4e4e4;
+}
 #moduleForeground {
-  margin: auto;
-  max-width: 43em;
+  max-width: 39em;
   margin-top: 10vh;
-  position: absolute;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
-  text-align: center;
-  z-index: -1;
+  margin-left: 30vh;
+}
+
+.notice {
+  font-size: 17px;
+  font-family: "Segoe UI";
+  margin-left: -9vh;
+  width: 44vh;
+  margin-top: 5vh;
+}
+
+input[type="text"] {
+  width: 28vh;
+  padding: 8px 4px;
+  box-sizing: border-box;
 }
 
 #moduleInfo table {
   margin: auto;
-  margin-top: 22vh;
+  margin-top: 19vh;
   border-collapse: collapse;
   font-size: 0.9em;
   font-family: Tahoma;

@@ -5,7 +5,7 @@ class ApiService {
 		'Content-Type': 'application/json; charset=utf-8',
 	};
 
-	apiUrl = 'https://localhost:5001/api';
+	apiUrl = 'https://quantum-academia-api.azurewebsites.net/api';
 
 	static instance = new this();
 	static getInstance = () => this.instance;
