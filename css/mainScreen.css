@@ -81,6 +81,7 @@ label {
 
 .rightNavBar a {
   margin-left: 5vh;
+  font-weight: 200 !important;
   font-size: 18px;
   font-family: Tahoma;
   color: black;
@@ -167,6 +168,51 @@ label {
   background-size: cover;
   background-position: center;
   height: 100vh;
+}
+
+.mainBtns {
+  background: none;
+  font-family: inherit;
+  font-weight: 600 !important;
+  cursor: pointer;
+  border: 2px solid transparent !important;
+  position: relative;
+  overflow: hidden;
+}
+
+.mainBtns {
+  color: #0687f1;
+}
+
+.mainBtns:hover {
+  color: #ff8800 !important;
+  font-weight: 500;
+  border: 2px solid #ff8800 !important;
+  /* margin: -1px !important; */
+}
+
+.mainBtns::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background: rgb(246 178 95);
+  z-index: -1;
+  transition: 0.8s;
+}
+
+.mainBtns::before {
+  top: 0;
+  border-radius: 0 0 50% 50%;
+}
+
+.mainBtns::before {
+  height: 180%;
+}
+
+.mainBtns:hover::before {
+  height: 0%;
 }
 
 .botNavSvg img {
