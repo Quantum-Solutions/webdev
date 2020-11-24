@@ -1,0 +1,36 @@
+/* Main Styling */
+html,
+body {
+  scroll-behavior: smooth;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+* img {
+  display: block;
+}
+
+* svg {
+  width: 100%;
+}
+
+.spacing {
+  margin: 0px 5% 0 5%;
+  max-width: 90%;
+}
+
+.login-container {
+  padding-top: 6vh;
+}
+
+label {
+  display: block;
+}

@@ -1,21 +1,22 @@
 $(document).ready(async function() {
     try {
         const id = UserAuthHelper.getUserId();
-        const response = await api.getModules(id);
+        const response = await api.getClassRegister(id);
 
         if(response.ok){
             const table = `
             <table border="1">
               <thead>
-                <th>Module Name</th>
-                <th>Module Code</th>
+                <th>Student Number</th>
+                <th>Name</th>
               </thead>
               <tbody>
                 ${response.data.map(v => {
                   return `
                     <tr>
+                      <td>${v.username}</td>
                       <td>${v.name}</td>
-                      <td>${v.code}</td>
+                      <input type="checkbox" id="presentStatus" name="presentStatus">
                     </tr>
                   `;
                 })}
@@ -25,9 +26,7 @@ $(document).ready(async function() {
           
           const div = $('#moduleInfo');
           div.append(table);
-          
-          $('#loadStatus').hide();
-          $('#moduleContainer').show();
+  
           
         }
         else{
