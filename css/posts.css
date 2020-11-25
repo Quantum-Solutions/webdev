@@ -1,0 +1,62 @@
+/* Main Styling */
+html,
+body {
+  scroll-behavior: smooth;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+* img {
+  display: block;
+}
+
+* svg {
+  width: 100%;
+}
+
+.spacing {
+  margin: 0px 5% 0 5%;
+  max-width: 90%;
+}
+
+.login-container {
+  padding-top: 6vh;
+}
+
+label {
+  display: block;
+}
+
+/* Homepage Styling */
+.homepageBack {
+  background-image: url(../images/backgrounds/postsBG.png);
+  background-size: contain;
+  background-position: bottom;
+  height: 100vh;
+}
+
+.panel-group {
+  margin-bottom: 20px;
+  width: 112vh;
+  height: 49.5vh;
+  border: black;
+  border-style: solid;
+  border-width: thin;
+}
+
+#moduleContainer {
+  display: grid;
+  grid-template-columns: 0.4fr;
+  margin: 3.8% 0 0 9.2%;
+  /* column-gap: 9vh; */
+  grid-row-gap: 2vh;
+  height: 80vh;
+}

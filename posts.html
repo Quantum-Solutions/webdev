@@ -1,0 +1,122 @@
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/mainScreen.css" />
+    <link rel="stylesheet" href="css/posts.css" />
+    <link rel="stylesheet" href="css/loadingStatus.css" />
+  
+  
+    <title>Academia Login</title>
+  </head>
+  <body class="homepageBack">
+    <div class="navbarSpacing">
+      <div class="navContainer">
+        <div class="navBar">
+          <div class="leftnavSect">
+            <a href="homepage.html" class="logo"
+              ><img src="images/svgs/logo.svg" alt="Logo.svg"
+            /></a>
+            <a href="homepage.html">Quantum Academia</a>
+          </div>
+  
+          <div class="rightNavBar">
+            <div class="navLeftBtns">
+              <a href="lecturerDetails.html">View Lecturer Details</a>
+              <a href="marks.html">My Marks</a>
+              <a href="#">My Timetable</a>
+              <a href="modules.html">Modules</a>
+            </div>
+            <div class="navRightBtns">
+              <a href="profile.html" class="mainBtns">My Profile</a>
+              <a
+                href="index.html"
+                class="mainBtns"
+                style="margin-left: 2vh !important"
+                >Logout</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="botNavSvg">
+          <img src="images/svgs/navBar.svg" />
+        </div>
+      </div>
+    </div>
+    <div id="loadStatus" style="font-size: larger;">
+      
+    </div>
+    <div id="moduleContainer" style="display: none;">
+        <div class="postHeader">
+            <h2>Posts</h2>
+        </div>
+        <div class="panel-group" id="accordion">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                  Collapsible Group 1</a>
+                </h4>
+              </div>
+              <div id="collapse1" class="panel-collapse collapse in">
+                <div class="panel-body" style="color: black;">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo consequat.</div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                  Collapsible Group 2</a>
+                </h4>
+              </div>
+              <div id="collapse2" class="panel-collapse collapse">
+                <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo consequat.</div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+                  Collapsible Group 3</a>
+                </h4>
+              </div>
+              <div id="collapse3" class="panel-collapse collapse">
+                <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo consequat.</div>
+              </div>
+            </div>
+          </div>
+        
+        
+        <div id="moduleInfo">
+          <div class="moduleHeader">
+          <!-- <h2>My Modules</h2> -->
+        </div>
+
+        </div>
+    </div>
+  
+   
+  
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/api/http-client.js"></script>
+    <script src="js/api/api-service.js"></script>
+    <script src="js/site.js"></script>
+    <script src="js/auth/login.js"></script>
+    <script src="js/helpers/session-storage-helper.js"></script>
+    <script src="js/helpers/jwt-token-helper.js"></script>
+    <script src="js/helpers/user-auth-helper.js"></script>
+    <script src="js/user/posts.js"></script>
+  </body>
+  

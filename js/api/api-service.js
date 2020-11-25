@@ -38,10 +38,14 @@ class ApiService {
 		}
 		
 	}	
-
+	//Get Calls
 	getUser = async (id) => this.doRequest('GET', `users/${id}`);
 	getModules = async (id) => this.doRequest('GET', `users/${id}/modules`);
 	getMarks = async (id) => this.doRequest('GET', `users/${id}/modules/marks`);
 	getClassRegister = async (id) => this.doRequest('GET', `modules/${id}/register`);
+	getPosts = async (id) => this.doRequest('GET', `modules/${id}/posts`);
+
+	//Post Calls
+	postPosts = async (id) => this.doRequest('POST', `modules/${id}/posts`);
 	
 }
