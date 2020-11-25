@@ -3,15 +3,17 @@ let auth;
 let userType;
 
 
-// Should be false on login and reg page
+// Navbar Variables
 const defNav = document.getElementById("navContainer");
-
-const nav = document.getElementById("studentNav");
+const navS = document.getElementById("studentNav");
 const navL = document.getElementById("lecturerNav");
 
+//Get user data variable
 const userId = UserAuthHelper.getUserId();
 // const userType = UserAuthHelper.getUserType();
- userType = "lecturer";
+
+//Variable for testin
+userType = "student";
 
  if(defNav){
     //Keep blank 
@@ -24,16 +26,18 @@ const userId = UserAuthHelper.getUserId();
         console.log(userType);
         
         if(userType == "student"){
+
             console.log("This is a student");
-            nav.style.display = "grid";
+            navS.style.display = "grid";
             
         }
         else if(userType == "lecturer"){
+
             console.log("This is a lecturer");
-            
             navL.style.display = "grid";
         }
         else if(userType == "admin"){
+
             console.log("This is a admin");
         }
     }

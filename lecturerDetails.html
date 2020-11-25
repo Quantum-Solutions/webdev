@@ -3,13 +3,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/mainScreen.css" />
     <link rel="stylesheet" href="css/lectDetails.css" />
+    <link rel="stylesheet" href="css/loadingStatus.css" />
 
   
     <title>Academia Login</title>
   </head>
   <body class="homepageBack">
     <div class="navbarSpacing">
-      <div class="navContainer">
+      <!-- <div class="navContainer">
+        <div class="navBar">
+          <div class="leftnavSect">
+            <a href="homepage.html" class="logo"
+              ><img src="images/svgs/logo.svg" alt="Logo.svg"
+            /></a>
+            <a href="homepage.html">Quantum Academia</a>
+          </div>
+  
+          <div class="rightNavBar">
+            <div class="navLeftBtns">
+              <a href="lecturerDetails.html">View Lecturer Details</a>
+              <a href="marks.html">My Marks</a>
+              <a href="#">My Timetable</a>
+              <a href="modules.html">Modules</a>
+            </div>
+            <div class="navRightBtns">
+              <a href="profile.html" class="mainBtns">My Profile</a>
+              <a
+                href="index.html"
+                class="mainBtns"
+                style="margin-left: 2vh !important"
+                >Logout</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="botNavSvg">
+          <img src="images/svgs/navBar.svg" />
+        </div>
+      </div> -->
+      <div style="display: none;" class="navContainer" id="studentNav">
         <div class="navBar">
           <div class="leftnavSect">
             <a href="homepage.html" class="logo"
@@ -40,8 +72,39 @@
           <img src="images/svgs/navBar.svg" />
         </div>
       </div>
+  
+      <div style="display: none;" class="navContainer" id="lecturerNav">
+        <div class="navBar">
+          <div class="leftnavSect">
+            <a href="homepage.html" class="logo"
+              ><img src="images/svgs/logo.svg" alt="Logo.svg"
+            /></a>
+            <a href="homepage.html">Quantum Academia</a>
+          </div>
+  
+          <div class="rightNavBar">
+            <div class="navLeftBtns">
+              <a href="posts.html">Create Post</a>
+              <a href="lect-register.html">Class Register</a>
+             
+            </div>
+            <div class="navRightBtns">
+              <a href="profile.html" class="mainBtns">My Profile</a>
+              <a
+                href="index.html"
+                class="mainBtns"
+                style="margin-left: 2vh !important"
+                >Logout</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="botNavSvg">
+          <img src="images/svgs/navBar.svg" />
+        </div>
+      </div>
     </div>
-<div class="lectDetailsContainer">
+<div class="lectDetailsContainer" style="display: none;">
   <div class="lectDetailsHeader">
     <h2>Lecturer Details</h2>
   </div>
@@ -71,7 +134,9 @@
 </div>
   
 </div>
-    
+<div id="loadStatus" style="font-size: larger;">
+      
+</div>
 
     <div id="moduleContainer">
         <img id="moduleForeground" src="images/svgs/moduleForeground.svg" />
@@ -83,7 +148,10 @@
     <script src="lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/api/http-client.js"></script>
     <script src="js/api/auth-service.js"></script>
+    <script src="js/helpers/session-storage-helper.js"></script>
+  <script src="js/helpers/jwt-token-helper.js"></script>
+    <script src="js/helpers/user-auth-helper.js"></script>
     <script src="js/site.js"></script>
-    <script src="js/auth/login.js"></script>
+    <script src="js/user/lect-details.js"></script>
   </body>
   

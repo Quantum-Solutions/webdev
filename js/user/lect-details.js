@@ -13,7 +13,7 @@ $(document).ready(async function() {
 
 
             $('#loadStatus').hide();
-            $('.profSection').show();
+            $('#lectDetailsContainer').show();
         }
         else{
             console.log('Not working')
