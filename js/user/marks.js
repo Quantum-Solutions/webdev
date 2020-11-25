@@ -24,6 +24,7 @@ $(document).ready(async function() {
           `;
           
           const div = $('#moduleInfo');
+          
           div.append(table);
 
           $('#loadStatus').hide();
