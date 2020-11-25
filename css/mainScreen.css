@@ -84,7 +84,7 @@ label {
   font-weight: 200 !important;
   font-size: 18px;
   font-family: Tahoma;
-  color: black;
+  color: white;
 }
 
 .leftnavSect a {
@@ -128,6 +128,12 @@ label {
   padding: 12px 50px;
   font-size: 19px;
   margin-top: 1vh;
+}
+
+.getEnrolled:hover {
+  color: white;
+  background: #ff8800;
+  transition: ease-in-out;
 }
 
 .homeCard1 h2 {
@@ -185,9 +191,9 @@ label {
 }
 
 .mainBtns:hover {
-  color: #ff8800 !important;
+  color: rgb(104 147 226) !important;
   font-weight: 500;
-  border: 2px solid #ff8800 !important;
+  border: 2px solid rgb(104 147 226) !important;
   /* margin: -1px !important; */
 }
 
@@ -197,7 +203,7 @@ label {
   left: 0;
   width: 100%;
   height: 0%;
-  background: rgb(246 178 95);
+  background: rgb(104 147 226);
   z-index: -1;
   transition: 0.8s;
 }

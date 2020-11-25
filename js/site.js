@@ -1,6 +1,10 @@
 ﻿let api;
 let auth;
-// UserAuthHelper.isUserAuthenticated.apply;
+
+// Should be false on login and reg page
+UserAuthHelper.isUserAuthenticated;
+
+UserAuthHelper.getUserId;
 //Validate token
 // if(UserAuthHelper.isUserAuthenticated ){
 //     console.log("SUCCESS!");

@@ -10,4 +10,10 @@ class UserAuthHelper {
 
 		return JwtTokenHelper.decodeJwt(token).userId;
 	}
+
+	static getUserType() {
+		const token = SessionStorageHelper.getJwtToken();
+
+		return JwtTokenHelper.decodeJwt(token).userType;
+	}
 }

@@ -1,22 +1,49 @@
+let response;
 $(document).ready(async function() {
     try {
         const id = UserAuthHelper.getUserId();
-        const response = await api.getClassRegister(id);
+        //const response = await api.getClassRegister(id);
+        
+        // if(response.ok){
+           response = JSON.parse(`{
+            "ok": true,
+            "data": [
+                {
+                    "username": "179258421",
+                    "firstName": "Keegan",
+                    "lastName": "Launspach",
+                    "attended": true
+                },
+                {
+                    "username": "179258421",
+                    "firstName": "Keegan",
+                    "lastName": "Launspach",
+                    "attended": true
+                },
+                {
+                    "username": "179258421",
+                    "firstName": "Keegan",
+                    "lastName": "Launspach",
+                    "attended": true
+                }
+            ]
+        }`);
 
-        if(response.ok){
             const table = `
             <table border="1">
               <thead>
                 <th>Student Number</th>
                 <th>Name</th>
+                <th>isPresent</th>
               </thead>
               <tbody>
                 ${response.data.map(v => {
                   return `
                     <tr>
                       <td>${v.username}</td>
-                      <td>${v.name}</td>
-                      <input type="checkbox" id="presentStatus" name="presentStatus">
+                      <td>${v.firstName} ${v.lastName}</td>
+                      <td><input type="checkbox" id="presentStatus" name="presentStatus"></td>
+                      
                     </tr>
                   `;
                 })}
@@ -24,14 +51,14 @@ $(document).ready(async function() {
             </table>
           `;
           
-          const div = $('#moduleInfo');
+          const div = $('#classReg');
           div.append(table);
-  
+          console.log(table);
           
-        }
-        else{
-            console.log('Not working')
-        }
+        // }
+        // else{
+        //     console.log('Not working')
+        // }
 
         $('#spinner').hide();
     } catch (error) {

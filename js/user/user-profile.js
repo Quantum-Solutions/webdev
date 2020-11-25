@@ -17,8 +17,8 @@ $(document).ready(async function() {
             //Make 2nd API Call for username and course
             // .value for inputs and .text for labels
             $('course').text(course);
-            $('studentNumber').val(username);
-            $('currentEmail').val(email);
+            $('#studentNumber').text(username);
+            $('#currentEmail').val(email);
 
             $('#loadStatus').hide();
             $('.profSection').show();

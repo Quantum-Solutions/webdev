@@ -34,3 +34,40 @@ body {
 label {
   display: block;
 }
+
+/* Class Reg CSS Starts Here */
+#classReg table {
+  border-collapse: collapse;
+  font-size: 0.9em;
+  font-family: Tahoma;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  font-size: 14px;
+  border-width: thin;
+  border-color: #4c4c4c;
+  color: white;
+}
+
+#classReg {
+  margin-left: 20vh;
+  margin-top: 6vh;
+}
+
+#classReg table thead tr {
+  background-color: #ff8800;
+  color: #ffffff;
+  text-align: left;
+}
+
+#classReg table th {
+  padding: 12px 15px;
+  color: white;
+}
+#classReg table td {
+  padding: 3px 18px;
+  color: black;
+}
+
+#classReg tbody {
+  text-align: center;
+}
