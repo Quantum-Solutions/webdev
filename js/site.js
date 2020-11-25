@@ -42,6 +42,7 @@ const userType = UserAuthHelper.getUserType();
         }
     }
     
+    
     else{
 
         
@@ -50,6 +51,7 @@ const userType = UserAuthHelper.getUserType();
     }
  }
 
+ 
 
 //console.log(tokenStatus);
 //UserAuthHelper.getUserId;
