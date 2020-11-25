@@ -13,7 +13,7 @@ const userId = UserAuthHelper.getUserId();
 // const userType = UserAuthHelper.getUserType();
 
 //Variable for testin
-userType = "student";
+userType = "lecturer";
 
  if(defNav){
     //Keep blank 
@@ -43,7 +43,8 @@ userType = "student";
     }
     
     else{
-        console.log("EISH");
+
+        
         window.location.href = 'index.html';
         
     }
