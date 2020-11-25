@@ -71,3 +71,17 @@ label {
 #classReg tbody {
   text-align: center;
 }
+
+.homepageBack {
+  background-image: url(../images/backgrounds/lectRegBG.png);
+  background-size: contain;
+  background-position: bottom;
+  height: 100vh;
+}
+
+.classRegHeader h2 {
+  font-size: 55px;
+  font-family: Nirmala UI;
+  color: black;
+  font-weight: lighter;
+}

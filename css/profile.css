@@ -45,15 +45,15 @@ label {
 
 .profileGrid {
   display: grid;
-  grid-template-columns: 0.4fr 0.6fr;
-  margin: 0% 0% 0 10%;
+  grid-template-columns: 1fr;
   position: relative;
   z-index: 1;
+  margin-top: 5vh;
 }
 
-#loadStatus {
-  border: 16px solid #f3f3f3; /* Light grey */
-  border-top: 16px solid #3498db; /* Blue */
+/* #loadStatus {
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid #3498db; 
   border-radius: 50%;
   width: 120px;
   height: 120px;
@@ -62,16 +62,16 @@ label {
   left: 90vh;
   top: 33vh;
   z-index: 3;
-}
+} */
 
-@keyframes spin {
+/* @keyframes spin {
   0% {
     transform: rotate(0deg);
   }
   100% {
     transform: rotate(360deg);
   }
-}
+} */
 
 .mainGrid {
   display: grid;
@@ -81,6 +81,8 @@ label {
 .farRightContainer {
   margin-top: 8vh;
   position: relative;
+  color: white;
+  font-family: Tahoma;
 }
 
 /* .headerGrid {
@@ -120,18 +122,26 @@ label {
 .rightLinks {
   display: grid;
   grid-row-gap: 2vh;
-  margin-top: 3ch;
-  position: absolute;
-  bottom: 0;
+  /* margin-top: 3ch; */
+  /* position: absolute; */
+  width: fit-content;
+  margin: auto;
+}
+
+.leftInnerContainer {
+  margin: auto;
 }
 
 .loginFields p {
   margin: auto 0;
+  font-family: Tahoma;
+  width: 12vh;
 }
 
 .profHeader {
-  margin-left: 18vh;
-  margin-bottom: 5vh;
+  margin-left: -16vh;
+  /* margin-bottom: 5vh; */
+  text-align: center;
 }
 
 .profHeader h1 {
