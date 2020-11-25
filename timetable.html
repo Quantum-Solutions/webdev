@@ -2,7 +2,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/mainScreen.css" />
-    <link rel="stylesheet" href="css/homepage.css" />
+    <link rel="stylesheet" href="css/timetable.css" />
+    <link rel="stylesheet" href="css/loadingStatus.css" />
   
     <title>Academia Login</title>
   </head>
@@ -39,7 +40,7 @@
           <img src="images/svgs/navBar.svg" />
         </div>
       </div>
-
+  
       <div style="display: none;" class="navContainer" id="lecturerNav">
         <div class="navBar">
           <div class="leftnavSect">
@@ -70,18 +71,34 @@
           <img src="images/svgs/navBar.svg" />
         </div>
       </div>
+      
+    </div>
+  
+    <div id="loadStatus" style="font-size: larger;">
+        
+    </div>
+  
+    <div>
+      <div id="classReg">
+        <div class="classRegHeader">
+        <h2>Class Register</h2>
+      </div>
+    
+      </div>
     </div>
   
    
   
     <script src="lib/jquery/dist/jquery.min.js"></script>
     <script src="lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/api/http-client.js"></script>
+    <script src="js/api/api-service.js"></script>
+    
+    <script src="js/auth/login.js"></script>
     <script src="js/helpers/session-storage-helper.js"></script>
     <script src="js/helpers/jwt-token-helper.js"></script>
-    <script src="js/api/http-client.js"></script>
-    <script src="js/api/auth-service.js"></script>
     <script src="js/helpers/user-auth-helper.js"></script>
     <script src="js/site.js"></script>
-    <script src="js/auth/login.js"></script>
+    <script src="js/user/timetable.js"></script>
   </body>
   

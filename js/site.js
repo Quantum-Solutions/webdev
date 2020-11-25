@@ -1,6 +1,6 @@
 ﻿let api;
 let auth;
-let userType;
+
 
 
 // Navbar Variables
@@ -10,10 +10,10 @@ const navL = document.getElementById("lecturerNav");
 
 //Get user data variable
 const userId = UserAuthHelper.getUserId();
-// const userType = UserAuthHelper.getUserType();
+const userType = UserAuthHelper.getUserType();
 
 //Variable for testin
-userType = "lecturer";
+//userType = "student";
 
  if(defNav){
     //Keep blank 
