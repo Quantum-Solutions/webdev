@@ -8,7 +8,7 @@
   </head>
   <body class="homepageBack">
     <div class="navbarSpacing">
-      <div class="navContainer">
+      <div style="display: none;" class="navContainer" id="studentNav">
         <div class="navBar">
           <div class="leftnavSect">
             <a href="homepage.html" class="logo"
@@ -39,14 +39,48 @@
           <img src="images/svgs/navBar.svg" />
         </div>
       </div>
+
+      <div style="display: none;" class="navContainer" id="lecturerNav">
+        <div class="navBar">
+          <div class="leftnavSect">
+            <a href="homepage.html" class="logo"
+              ><img src="images/svgs/logo.svg" alt="Logo.svg"
+            /></a>
+            <a href="homepage.html">Quantum Academia</a>
+          </div>
+  
+          <div class="rightNavBar">
+            <div class="navLeftBtns">
+              <a href="posts.html">Create Post</a>
+              <a href="lect-register.html">Class Register</a>
+             
+            </div>
+            <div class="navRightBtns">
+              <a href="profile.html" class="mainBtns">My Profile</a>
+              <a
+                href="index.html"
+                class="mainBtns"
+                style="margin-left: 2vh !important"
+                >Logout</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="botNavSvg">
+          <img src="images/svgs/navBar.svg" />
+        </div>
+      </div>
     </div>
   
    
   
     <script src="lib/jquery/dist/jquery.min.js"></script>
     <script src="lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/helpers/session-storage-helper.js"></script>
+    <script src="js/helpers/jwt-token-helper.js"></script>
     <script src="js/api/http-client.js"></script>
     <script src="js/api/auth-service.js"></script>
+    <script src="js/helpers/user-auth-helper.js"></script>
     <script src="js/site.js"></script>
     <script src="js/auth/login.js"></script>
   </body>

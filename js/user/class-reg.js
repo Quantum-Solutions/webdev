@@ -53,7 +53,9 @@ $(document).ready(async function() {
           
           const div = $('#classReg');
           div.append(table);
-          console.log(table);
+
+          $('#loadStatus').hide();
+          $('#classReg').show();
           
         // }
         // else{
