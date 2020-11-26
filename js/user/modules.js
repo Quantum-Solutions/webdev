@@ -9,6 +9,7 @@ $(document).ready(async function() {
               <thead>
                 <th>Module Name</th>
                 <th>Module Code</th>
+                <th>Lecturer Info</th>
               </thead>
               <tbody>
                 ${response.data.map(v => {
@@ -16,6 +17,7 @@ $(document).ready(async function() {
                     <tr>
                       <td>${v.name}</td>
                       <td>${v.code}</td>
+                      <td><a href="lecturerDetails.html">Info Link</a></td>
                     </tr>
                   `;
                 })}
@@ -25,7 +27,7 @@ $(document).ready(async function() {
           
           const div = $('#moduleInfo');
           div.append(table);
-          
+          console.log(response);
           $('#loadStatus').hide();
           $('#moduleContainer').show();
           

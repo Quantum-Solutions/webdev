@@ -50,3 +50,12 @@ label {
   color: black;
   font-weight: lighter;
 }
+
+#iframepdf {
+  width: 80%;
+  height: 80%;
+}
+
+#classReg {
+  text-align: center;
+}

@@ -2,33 +2,9 @@ let response;
 $(document).ready(async function() {
     try {
         const id = UserAuthHelper.getUserId();
-        //const response = await api.getClassRegister(id);
+        const response = await api.getClassRegister(id);
         
-        // if(response.ok){
-           response = JSON.parse(`{
-            "ok": true,
-            "data": [
-                {
-                    "username": "179258421",
-                    "firstName": "Keegan",
-                    "lastName": "Launspach",
-                    "attended": true
-                },
-                {
-                    "username": "179258421",
-                    "firstName": "Keegan",
-                    "lastName": "Launspach",
-                    "attended": true
-                },
-                {
-                    "username": "179258421",
-                    "firstName": "Keegan",
-                    "lastName": "Launspach",
-                    "attended": true
-                }
-            ]
-        }`);
-
+         if(response.ok){
             const table = `
             <table border="1">
               <thead>
@@ -57,10 +33,10 @@ $(document).ready(async function() {
           $('#loadStatus').hide();
           $('#classReg').show();
           
-        // }
-        // else{
-        //     console.log('Not working')
-        // }
+        }
+        else{
+            console.log('Not working')
+        }
 
         $('#spinner').hide();
     } catch (error) {
