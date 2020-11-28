@@ -186,12 +186,23 @@
             <div class="rightInnerContainer">
               <div class="loginFields">
                 <label class="rowLabel">
-                  <p>Course of Interest</p>
+                  <!-- <p>Course of Interest</p>
                   <input
                     type="text"
                     name="courseOfInterest"
                     class="courseOfInterest"
-                  />
+                  /> -->
+                  <form action="/action_page.php">
+                    <label for="courses">Course of Interest : </label>
+                    <select id="courses" name="courses">
+                      <option value="BLAW">BLAW</option>
+                      <option value="BCOM">BCOM</option>
+                      <option value="BCNE">BCNE</option>
+                      <option value="BCAD">BCAD</option>
+                      <option value="DCBM">DCBM</option>
+                      <option value="BACC">BACC</option>
+                    </select>
+                  </form>
                 </label>
               </div>
             </div>
@@ -223,7 +234,7 @@
                 </label>
                 <label class="tAndC">
                   <div class="tAndC-Container">
-                    <p>Terms & Conditions</p>
+                    <a  href="./T&Cs/Terms and Conditions.pdf" target="_blank">Terms & Conditions</a>
                   </div>
                 </label>
 

@@ -175,6 +175,13 @@ label {
 
 .tAndC-Container {
   text-align: center;
+  margin-top: 5vh;
+}
+
+.tAndC-Container a {
+  font-size: 22px;
+  font-family: monospace;
+  font-weight: bold;
 }
 
 .agreeBtn {
