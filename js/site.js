@@ -4,7 +4,7 @@ let auth;
 
 
 // Navbar Variables
-const defNav = document.getElementById("navContainer");
+//const defNav = document.getElementById("navContainer");
 const navS = document.getElementById("studentNav");
 const navL = document.getElementById("lecturerNav");
 
@@ -15,15 +15,18 @@ const userType = UserAuthHelper.getUserType();
 //Variable for testin
 //userType = "student";
 
- if(defNav){
-    //Keep blank 
+ if(document.getElementById("navContainer")){
+   //alert('Welcome!')
+   //Leave Blank
  }
+
  else{
 
     if(userId!=null){
 
         console.log(userId);
         console.log(userType);
+        
         
         if(userType == "student"){
 
@@ -45,7 +48,7 @@ const userType = UserAuthHelper.getUserType();
     
     else{
 
-        
+        userId = "kicked from page"
         window.location.href = 'index.html';
         
     }
