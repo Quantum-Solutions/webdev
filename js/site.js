@@ -15,41 +15,41 @@ const userType = UserAuthHelper.getUserType();
 //Variable for testin
 //userType = "student";
 
-//  if(defNav){
-//     //Keep blank 
-//  }
-//  else{
+ if(defNav){
+    //Keep blank 
+ }
+ else{
 
-//     if(userId!=null){
+    if(userId!=null){
 
-//         console.log(userId);
-//         console.log(userType);
+        console.log(userId);
+        console.log(userType);
         
-//         if(userType == "student"){
+        if(userType == "student"){
 
-//             console.log("This is a student");
-//             navS.style.display = "grid";
+            console.log("This is a student");
+            navS.style.display = "grid";
             
-//         }
-//         else if(userType == "lecturer"){
+        }
+        else if(userType == "lecturer"){
 
-//             console.log("This is a lecturer");
-//             navL.style.display = "grid";
-//         }
-//         else if(userType == "admin"){
+            console.log("This is a lecturer");
+            navL.style.display = "grid";
+        }
+        else if(userType == "admin"){
 
-//             console.log("This is a admin");
-//         }
-//     }
+            console.log("This is a admin");
+        }
+    }
     
     
-//     else{
+    else{
 
         
-//         window.location.href = 'index.html';
+        window.location.href = 'index.html';
         
-//     }
-//  }
+    }
+ }
 
  
 
