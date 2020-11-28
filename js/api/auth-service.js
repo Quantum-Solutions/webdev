@@ -37,4 +37,5 @@ class AuthService {
 	}
 
 	login = async (credentials) => this.doRequest('POST', 'login/', credentials);
+	register = async (credentials) => this.doRequest('POST', 'register/', credentials);
 }

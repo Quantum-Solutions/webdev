@@ -1,3 +1,37 @@
+$('#btnAgree').click( async function () {
+  
+   
+  const credentials = { firstName, lastName, email, password, passwordConf, idNum, contactNo, address, gender, city, 
+    province, zipCode, country, highschool,engMark, fistLangMark, mathMark, scienceMark, extra1Mark, extra2Mark,
+  course };
+  
+  try {
+    const response = await auth.register(credentials);
+    console.log(response);
+
+      if (response.ok) {
+
+        window.location.href = 'index.html';
+        
+      } 
+      else {
+
+        $('#message').text(response.message);
+
+      }
+      console.log(response);
+
+  } catch (err) {
+
+    console.log(err);
+    $('#message').text('Invalid email/password');
+    console.log('fail');
+  }  
+
+});
+
+
+
 // First Next Button Click
 function nextPage1() {
   var x = document.getElementById("registerGrid-1");
@@ -24,37 +58,3 @@ function nextPage2() {
 }
 
 
-$(document).ready(async function() {
-  try {
-      const id = UserAuthHelper.getUserId();
-      const response = await api.getUser(id);
-
-      if(response.ok){
-          
-          const { firstName, lastName, contactNumber, address, gender, email, username } = response.data;
-          console.log(response.data);
-          console.log( $('#firstName'));
-          $('#firstName').val(firstName);
-          $('#lastName').val(lastName);
-          $('#contactNo').val(contactNumber);
-          $('#address').val(address);
-          $('#gender').val(gender);
-          
-          //Make 2nd API Call for username and course
-          // .value for inputs and .text for labels
-          $('course').text(course);
-          $('#studentNumber').text(username);
-          $('#currentEmail').val(email);
-
-          $('#loadStatus').hide();
-          $('.profSection').show();
-      }
-      else{
-          console.log('Not working')
-      }
-
-      $('#spinner').hide();
-  } catch (error) {
-      console.log(error);
-  }
-});

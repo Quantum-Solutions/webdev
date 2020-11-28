@@ -12,7 +12,7 @@
 
   <body class="registerBack" onload="validateStud()">
     <div class="navbarSpacing">
-      <div class="navContainer">
+      <div class="navContainer" id="navContainer">
         <div class="navBar">
           <div class="leftnavSect">
             <a href="/" class="logo"
@@ -90,15 +90,9 @@
                   <input type="text" name="contactNo" class="contactNo" />
                 </label>
 
-                <label class="rowLabel">
-                  <p>Address</p>
-                  <input type="text" name="address" class="address" />
-                </label>
+                
 
-                <label class="rowLabel">
-                  <p>Gender</p>
-                  <input type="text" name="gender" class="gender" />
-                </label>
+                
 
                 <label class="rowLabel">
                   <p></p>
@@ -109,9 +103,15 @@
 
             <div class="rightInnerContainer">
               <div class="loginFields">
+
                 <label class="rowLabel">
-                  <p>Start Date</p>
-                  <input type="text" name="startDate" class="startDate" />
+                  <p>Address</p>
+                  <input type="text" name="address" class="address" />
+                </label>
+
+                <label class="rowLabel">
+                  <p>Gender</p>
+                  <input type="text" name="gender" class="gender" />
                 </label>
 
                 <label class="rowLabel">
@@ -193,8 +193,8 @@
                     class="courseOfInterest"
                   /> -->
                   <form action="/action_page.php">
-                    <label for="courses">Course of Interest : </label>
-                    <select id="courses" name="courses">
+                    <label class="courseTitle" for="courses">Course of Interest : </label>
+                    <select id="courses" class="courses">
                       <option value="BLAW">BLAW</option>
                       <option value="BCOM">BCOM</option>
                       <option value="BCNE">BCNE</option>
@@ -240,7 +240,7 @@
 
                 <label class="agreeBtn">
                   <p></p>
-                  <a onclick="nextPage2()" class="btnNext-1">Agree</a>
+                  <a onclick="nextPage2()" class="btnNext-1" id="btnAgree">Agree</a>
                 </label>
               </div>
             </div>
@@ -248,5 +248,14 @@
         </div>
       </div>
     </section>
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/helpers/session-storage-helper.js"></script>
+    <script src="js/helpers/jwt-token-helper.js"></script>
+    <script src="js/api/http-client.js"></script>
+    <script src="js/api/auth-service.js"></script>
+    <script src="js/helpers/user-auth-helper.js"></script>
+    <script src="js/site.js"></script>
+    <script src="js/auth/register.js"></script>
   </body>
 </html>
