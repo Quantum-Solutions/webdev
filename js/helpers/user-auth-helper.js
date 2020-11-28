@@ -1,19 +1,25 @@
 class UserAuthHelper {
-	static isUserAuthenticated() {
-		const token = SessionStorageHelper.getJwtToken();
+    static isUserAuthenticated() {
+        const token = SessionStorageHelper.getJwtToken();
 
-		return token !== null;
-	}
+        return token !== null;
+    }
 
-	static getUserId() {
-		const token = SessionStorageHelper.getJwtToken();
+    static getUserId() {
+        const token = SessionStorageHelper.getJwtToken();
 
-		return JwtTokenHelper.decodeJwt(token).userId;
-	}
+        if (!token)
+            return null;
 
-	static getUserType() {
-		const token = SessionStorageHelper.getJwtToken();
+        return JwtTokenHelper.decodeJwt(token).userId;
+    }
 
-		return JwtTokenHelper.decodeJwt(token).userType;
-	}
+    static getUserType() {
+        const token = SessionStorageHelper.getJwtToken();
+
+        if (!token)
+            return null;
+
+        return JwtTokenHelper.decodeJwt(token).userType;
+    }
 }
