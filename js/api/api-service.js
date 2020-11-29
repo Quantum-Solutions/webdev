@@ -50,5 +50,5 @@ class ApiService {
 	postPosts = async (id) => this.doRequest('POST', `modules/${id}/posts`);
 
 	//Put Calls
-	putProfile = async (id) => this.doRequest('PUT', `users/${id}`);
+	putProfile = async (id, user) => this.doRequest('PUT', `users/${id}`, user);
 }

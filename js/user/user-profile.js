@@ -1,12 +1,15 @@
+let user;
+
 $(document).ready(async function() {
     try {
         const id = UserAuthHelper.getUserId();
         const response = await api.getUser(id);
-       
 
         if(response.ok){
-            
+            user = response.data;
+
             const { firstName, lastName, contactNumber, address, gender, email, username , course} = response.data;
+            
             console.log(response.data);
             console.log( $('#firstName'));
             $('#firstName').val(firstName);
@@ -36,58 +39,28 @@ $(document).ready(async function() {
 
 
 //PUT Request
-$('#btnUpdateDetails').click(function() {
-    const id = UserAuthHelper.getUserId();
-    
-    const { firstName, lastName, contact_number, address, gender, email} = response.data;
-   
+$('#btnUpdateDetails').click(async function() {
+    const firstName = $('#firstName').val();
+    const lastName = $('#lastName').val();
+    const email = $('#currentEmail').val();
+    const contactNumber = $('#contactNo').val();
+    const address = $('#address').val();
+    const gender = $('#gender').val();
+
+    user.firstName = firstName;
+    user.lastName = lastName;
+    user.email = email;
+    user.contactNumber = contactNumber;
+    user.address = address;
+    user.gender = gender;
+
+    const userId = UserAuthHelper.getUserId();
 
     try{
-      
-        //console.log(push.data);
-        
-        const firstName = $('#firstName').val();
-        const lastName = $('#lastName').val();
-        const email = $('#email').val();
-        const contact_number = $('#contactNo').val();
-        const address = $('#address').val();
-        const gender = $('#gender').val();
+      const response = await api.putProfile(userId, user);
 
-        const response = api.putProfile(id);
-        console.log('PUT REQUEST ATTEMPTED!')
-       
-    }
-    catch{
+      console.log(response);
+    } catch{
         console.log('PUT Not working')
-    }
-
-
-    const credentials = { firstName, lastName, email, password, passwordConf, id_number, contact_number, address, gender, city, 
-        province, zipCode, country, highschool,engMark, fistLangMark, mathMark, scienceMark, extra1Mark, extra2Mark,
-      course };
-      
-      try {
-        const response = await auth.register(credentials);
-        console.log(response);
-    
-       
-    
-          if (response.ok) {
-    
-            window.location.href = 'index.html';
-            
-          } 
-          else {
-    
-            $('#message').text(response.message);
-    
-          }
-          console.log(response);
-    
-      } catch (err) {
-    
-        console.log(err);
-        $('#message').text('Invalid email/password');
-        console.log('fail');
-      }  
+    } 
 });
