@@ -7,6 +7,7 @@ let auth;
 //const defNav = document.getElementById("navContainer");
 const navS = document.getElementById("studentNav");
 const navL = document.getElementById("lecturerNav");
+const navA = document.getElementById("adminNav");
 
 //Get user data variable
 const userId = UserAuthHelper.getUserId();
@@ -41,7 +42,8 @@ const userType = UserAuthHelper.getUserType();
         }
         else if(userType == "admin"){
 
-            console.log("This is a admin");
+            console.log("This is an admin");
+            navA.style.display = "grid";
         }
     }
     

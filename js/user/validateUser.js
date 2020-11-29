@@ -22,3 +22,15 @@ function validateLect() {
       console.log("Authorized Student.")
     }
   }
+
+  function validateAdmin() {
+    const userType = UserAuthHelper.getUserType();
+    if(userType != "admin"){
+  
+      window.location.href = 'index.html';
+  
+    }
+    else{
+      console.log("Authorized Admin.")
+    }
+  }

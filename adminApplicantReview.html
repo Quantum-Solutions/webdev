@@ -1,0 +1,252 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+    <link rel="stylesheet" href="../css/mainScreen.css" />
+    <link rel="stylesheet" href="./css/adminReviewPage.css" />
+    
+
+    <title>Academia Register</title>
+  </head>
+
+  <body class="registerBack">
+    <div class="navbarSpacing">
+      <!-- <div class="navContainer" id="navContainer">
+        <div class="navBar">
+          <div class="leftnavSect">
+            <a href="homepage.html" class="logo"
+              ><img src="images/svgs/logo.svg" alt="Logo.svg"
+            /></a>
+            <a href="homepage.html">Quantum Academia</a>
+          </div>
+
+          <div class="rightNavBar">
+            <div class="navLeftBtns">
+              
+            </div>
+            <div class="navRightBtns">
+              <a href="login.html" class="mainBtns">Login</a>
+              <a
+                href="register.html"
+                class="mainBtns"
+                style="margin-left: 2vh !important"
+                >Register</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="botNavSvg">
+          <img src="images/svgs/navBar.svg" />
+        </div>
+      </div> -->
+      <div style="display: none;" class="navContainer" id="adminNav">
+        <div class="navBar">
+          <div class="leftnavSect">
+            <a href="homepage.html" class="logo"
+              ><img src="images/svgs/logo.svg" alt="Logo.svg"
+            /></a>
+            <a href="homepage.html">Quantum Academia</a>
+          </div>
+  
+          <div class="rightNavBar">
+            <div class="navLeftBtns">
+              <a href="adminApplicantReview.html">Applicant Review</a>
+              
+             
+            </div>
+            <div class="navRightBtns">
+              
+              <a
+                href="index.html"
+                class="mainBtns"
+                style="margin-left: 2vh !important"
+                >Logout</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="botNavSvg">
+          <img src="images/svgs/navBar.svg" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Register -->
+    <section class="registerSection">
+      <div class="spacing">
+        <div class="container">
+          <div class="regHeader">
+            <h1>Applicant Review</h1>
+          </div>
+          <div class="registerGrid-1" id="registerGrid-1">
+            <div class="leftInnerContainer">
+              <div class="loginFields">
+                <label class="rowLabel">
+                  <p>First Name</p>
+                  <input type="text" name="firstName" class="firstName" id="firstName" disabled="disabled" />
+                </label>
+
+                <label class="rowLabel">
+                  <p>Last Name</p>
+                  <input type="text" name="lastName" class="lastName" id="lastName"  disabled="disabled"/>
+                </label>
+                <label class="rowLabel">
+                  <p>Email</p>
+                  <input type="text" name="email" class="email" id="email" disabled="disabled"  />
+                </label>
+
+                <!-- <label class="rowLabel">
+                  <p>Password</p>
+                  <input type="password" name="password" class="password" id="password" />
+                </label>
+
+                <label class="rowLabel">
+                  <p>Password Confirm</p>
+                  <input
+                    type="password"
+                    name="passwordConfirm"
+                    class="passwordConfirm" id="passwordConfirm"
+                  /> -->
+                </label>
+
+                <label class="rowLabel">
+                  <p>ID Number</p>
+                  <input type="text" name="idNum" class="idNum" id="id_number" disabled="disabled" />
+                </label>
+
+                <label class="rowLabel">
+                  <p>Contact No</p>
+                  <input type="text" name="contactNo" class="contactNo" id="contactNo" disabled="disabled" />
+                </label>
+
+                <label class="rowLabel">
+                    <p>Address</p>
+                    <input type="text" name="address" class="address" id="address"  disabled="disabled"/>
+                  </label>
+                
+
+                
+
+                <!-- <label class="rowLabel">
+                  <p></p>
+                  <a onclick="nextPage1()" class="btnNext-1">Next</a>
+                </label> -->
+              </div>
+            </div>
+
+            <div class="rightInnerContainer">
+              <div class="loginFields">
+
+                
+
+                <label class="rowLabel">
+                  <p>Gender</p>
+                  <input type="text" name="gender" class="gender" id="gender" disabled="disabled" />
+                </label>
+
+                <label class="rowLabel">
+                  <p>City</p>
+                  <input type="text" name="city" class="city" id="city" disabled="disabled" />
+                </label>
+
+                <label class="rowLabel">
+                  <p>Province</p>
+                  <input type="text" name="province" class="province" id="province" disabled="disabled" />
+                </label>
+
+                <label class="rowLabel">
+                  <p>ZIP code</p>
+                  <input type="text" name="zipCode" class="zipCode" id="zipCode" disabled="disabled" />
+                </label>
+
+                <label class="rowLabel">
+                  <p>Country</p>
+                  <input type="text" name="country" class="country" id="country" disabled="disabled"/>
+                </label>
+
+                <label class="rowLabel">
+                  <p>Highschool</p>
+                  <input type="text" name="highschool" class="highschool" id="highschool" disabled="disabled" />
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- @* Student Marks Page *@ -->
+        <div class="container" style="margin-top: 10vh; margin-bottom: 20vh;">
+            <div class="regHeader">
+                <h2>Student's Marks</h2>
+              </div>
+          <div class="registerGrid-2" id="registerGrid-2">
+            <div class="leftInnerContainer">
+              <div class="loginFields">
+                <label class="rowLabel">
+                  <p>English</p>
+                  <input type="text" name="english" class="english" id="englishMark" disabled="disabled" />
+                </label>
+
+                <label class="rowLabel">
+                  <p>First Additional Language</p>
+                  <input type="text" name="firstAddLang" class="firstAddLang" id="firstAddLangMark" disabled="disabled" />
+                </label>
+                <label class="rowLabel">
+                  <p>Maths/Maths Lit</p>
+                  <input type="text" name="maths" class="maths" id="mathMark" disabled="disabled" />
+                </label>
+
+                <label class="rowLabel">
+                  <p>Sciences</p>
+                  <input type="password" name="sciences" class="sciences" id="scienceMark" disabled="disabled" />
+                </label>
+
+                
+
+                <label class="rowLabel">
+                  <p></p>
+                  <a class="acceptReview">Accept Student</a>
+                  <a class="declineReview">Decline Student</a>
+                </label>
+                
+              </div>
+            </div>
+            <div class="rightInnerContainer">
+              <div class="loginFields">
+                <label class="rowLabel">
+                    <label class="rowLabel">
+                        <p>Extra 1</p>
+                        <input type="password" name="extra1" class="extra1" id="extra1Mark" disabled="disabled" />
+                      </label>
+      
+                      <label class="rowLabel">
+                        <p>Extra 2</p>
+                        <input type="text" name="extra2" class="extra2" id="extra2Mark" disabled="disabled" />
+                      </label>
+      
+                      <label class="rowLabel">
+                          <p>Course</p>
+                          <input type="text" name="course" class="course" id="course" disabled="disabled" />
+                        </label>
+                  
+                  </form>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+      </div>
+    </section>
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/helpers/session-storage-helper.js"></script>
+    <script src="js/helpers/jwt-token-helper.js"></script>
+    <script src="js/api/http-client.js"></script>
+    <script src="js/api/auth-service.js"></script>
+    <script src="js/helpers/user-auth-helper.js"></script>
+    <script src="js/site.js"></script>
+    <script src="js/auth/register.js"></script>
+  </body>
+</html>
