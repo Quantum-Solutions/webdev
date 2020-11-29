@@ -5,7 +5,7 @@ $('#btnAgree').click( async function() {
   const email = $('#email').val();
   const password = $('#password').val();
   const passwordConf = $('#passwordConf').val();
-  const idNum = $('#idNum').val();
+  const id_number = $('#id_number').val();
   const contact_number = $('#contactNo').val();
   const address = $('#address').val();
   const gender = $('#gender').val();
@@ -22,7 +22,7 @@ $('#btnAgree').click( async function() {
   const extra2Mark = $('#extra2Mark').val();
   const course = $('#courseChosen').val();
 	
-  const credentials = { firstName, lastName, email, password, passwordConf, idNum, contact_number, address, gender, city, 
+  const credentials = { firstName, lastName, email, password, passwordConf, id_number, contact_number, address, gender, city, 
     province, zipCode, country, highschool,engMark, fistLangMark, mathMark, scienceMark, extra1Mark, extra2Mark,
   course };
   
