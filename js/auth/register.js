@@ -6,7 +6,7 @@ $('#btnAgree').click( async function() {
   const password = $('#password').val();
   const passwordConf = $('#passwordConf').val();
   const idNum = $('#idNum').val();
-  const contactNo = $('#contactNo').val();
+  const contact_number = $('#contactNo').val();
   const address = $('#address').val();
   const gender = $('#gender').val();
   const city = $('#city').val();
@@ -14,23 +14,23 @@ $('#btnAgree').click( async function() {
   const zipCode = $('#zipCode').val();
   const country = $('#country').val();
   const highschool = $('#highschool').val();
-  const engMark = $('#engMark').val();
-  const fistLangMark = $('#fistLangMark').val();
+  const engMark = $('#englishMark').val();
+  const fistLangMark = $('#firstAddLangMark').val();
   const mathMark = $('#mathMark').val();
   const scienceMark = $('#scienceMark').val();
   const extra1Mark = $('#extra1Mark').val();
   const extra2Mark = $('#extra2Mark').val();
-  const course = $('#course').val();
+  const course = $('#courseChosen').val();
 	
-  
+  const credentials = { firstName, lastName, email, password, passwordConf, idNum, contact_number, address, gender, city, 
+    province, zipCode, country, highschool,engMark, fistLangMark, mathMark, scienceMark, extra1Mark, extra2Mark,
+  course };
   
   try {
     const response = await auth.register(credentials);
     console.log(response);
 
-    const credentials = { firstName, lastName, email, password, passwordConf, idNum, contactNo, address, gender, city, 
-      province, zipCode, country, highschool,engMark, fistLangMark, mathMark, scienceMark, extra1Mark, extra2Mark,
-    course };
+   
 
       if (response.ok) {
 
