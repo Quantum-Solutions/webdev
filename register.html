@@ -2,15 +2,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="js/user/validateUser.js"></script>
+  
     <link rel="stylesheet" href="../css/mainScreen.css" />
     <link rel="stylesheet" href="../css/register.css" />
-    <script src="js/auth/register.js"></script>
+    
 
     <title>Academia Register</title>
   </head>
 
-  <body class="registerBack" onload="validateStud()">
+  <body class="registerBack">
     <div class="navbarSpacing">
       <div class="navContainer" id="navContainer">
         <div class="navBar">
@@ -54,21 +54,21 @@
               <div class="loginFields">
                 <label class="rowLabel">
                   <p>First Name</p>
-                  <input type="text" name="firstName" class="firstName" />
+                  <input type="text" name="firstName" class="firstName" id="firstName" />
                 </label>
 
                 <label class="rowLabel">
                   <p>Last Name</p>
-                  <input type="text" name="lastName" class="lastName" />
+                  <input type="text" name="lastName" class="lastName" id="lastName" />
                 </label>
                 <label class="rowLabel">
                   <p>Email</p>
-                  <input type="text" name="email" class="email" />
+                  <input type="text" name="email" class="email" id="email"  />
                 </label>
 
                 <label class="rowLabel">
                   <p>Password</p>
-                  <input type="password" name="password" class="password" />
+                  <input type="password" name="password" class="password" id="password" />
                 </label>
 
                 <label class="rowLabel">
@@ -76,18 +76,18 @@
                   <input
                     type="password"
                     name="passwordConfirm"
-                    class="passwordConfirm"
+                    class="passwordConfirm" id="passwordConfirm"
                   />
                 </label>
 
                 <label class="rowLabel">
                   <p>ID Number</p>
-                  <input type="text" name="idNum" class="idNum" />
+                  <input type="text" name="idNum" class="idNum" id="idNum" />
                 </label>
 
                 <label class="rowLabel">
                   <p>Contact No</p>
-                  <input type="text" name="contactNo" class="contactNo" />
+                  <input type="text" name="contactNo" class="contactNo" id="contactNo" />
                 </label>
 
                 
@@ -106,37 +106,37 @@
 
                 <label class="rowLabel">
                   <p>Address</p>
-                  <input type="text" name="address" class="address" />
+                  <input type="text" name="address" class="address" id="address" />
                 </label>
 
                 <label class="rowLabel">
                   <p>Gender</p>
-                  <input type="text" name="gender" class="gender" />
+                  <input type="text" name="gender" class="gender" id="gender" />
                 </label>
 
                 <label class="rowLabel">
                   <p>City</p>
-                  <input type="text" name="city" class="city" />
+                  <input type="text" name="city" class="city" id="city" />
                 </label>
 
                 <label class="rowLabel">
                   <p>Province</p>
-                  <input type="text" name="province" class="province" />
+                  <input type="text" name="province" class="province" id="province" />
                 </label>
 
                 <label class="rowLabel">
                   <p>ZIP code</p>
-                  <input type="text" name="zipCode" class="zipCode" />
+                  <input type="text" name="zipCode" class="zipCode" id="zipCode" />
                 </label>
 
                 <label class="rowLabel">
                   <p>Country</p>
-                  <input type="text" name="country" class="country" />
+                  <input type="text" name="country" class="country" id="country"/>
                 </label>
 
                 <label class="rowLabel">
                   <p>Highschool</p>
-                  <input type="text" name="highschool" class="highschool" />
+                  <input type="text" name="highschool" class="highschool" id="highschool" />
                 </label>
               </div>
             </div>
@@ -240,7 +240,7 @@
 
                 <label class="agreeBtn">
                   <p></p>
-                  <a onclick="nextPage2()" class="btnNext-1" id="btnAgree">Agree</a>
+                  <a class="btnNext-1" id="btnAgree">Agree</a>
                 </label>
               </div>
             </div>
