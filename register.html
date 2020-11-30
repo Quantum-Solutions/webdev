@@ -54,21 +54,21 @@
               <div class="loginFields">
                 <label class="rowLabel">
                   <p>First Name</p>
-                  <input type="text" name="firstName" class="firstName" id="firstName" />
+                  <input type="text" name="firstName" class="firstName" id="firstName" maxlength="25" required />
                 </label>
 
                 <label class="rowLabel">
                   <p>Last Name</p>
-                  <input type="text" name="lastName" class="lastName" id="lastName" />
+                  <input type="text" name="lastName" class="lastName" id="lastName" required maxlength="25" />
                 </label>
                 <label class="rowLabel">
                   <p>Email</p>
-                  <input type="text" name="email" class="email" id="email"  />
+                  <input type="email" name="email" class="email" id="email" required maxlength="30" />
                 </label>
 
                 <label class="rowLabel">
                   <p>Password</p>
-                  <input type="password" name="password" class="password" id="password" />
+                  <input type="password" name="password" class="password" id="password" maxlength="25" required/>
                 </label>
 
                 <label class="rowLabel">
@@ -76,18 +76,18 @@
                   <input
                     type="password"
                     name="passwordConfirm"
-                    class="passwordConfirm" id="passwordConfirm"
+                    class="passwordConfirm" id="passwordConfirm" maxlength="25" required
                   />
                 </label>
 
                 <label class="rowLabel">
                   <p>ID Number</p>
-                  <input type="text" name="idNum" class="idNum" id="id_number" />
+                  <input type="text" name="idNum" class="idNum" id="id_number" maxlength="13" required />
                 </label>
 
                 <label class="rowLabel">
                   <p>Contact No</p>
-                  <input type="text" name="contactNo" class="contactNo" id="contactNo" />
+                  <input type="number" name="contactNo" class="contactNo" id="contactNo" maxlength="10" required />
                 </label>
 
                 
@@ -96,7 +96,7 @@
 
                 <label class="rowLabel">
                   <p></p>
-                  <a onclick="nextPage1()" class="btnNext-1">Next</a>
+                  <a onclick="nextPage1()" type="submit" class="btnNext-1">Next</a>
                 </label>
               </div>
             </div>
@@ -106,37 +106,37 @@
 
                 <label class="rowLabel">
                   <p>Address</p>
-                  <input type="text" name="address" class="address" id="address" />
+                  <input type="text" name="address" class="address" id="address" maxlength="50" required />
                 </label>
 
                 <label class="rowLabel">
                   <p>Gender</p>
-                  <input type="text" name="gender" class="gender" id="gender" />
+                  <input type="text" name="gender" class="gender" id="gender" maxlength="15" required />
                 </label>
 
                 <label class="rowLabel">
                   <p>City</p>
-                  <input type="text" name="city" class="city" id="city" />
+                  <input type="text" name="city" class="city" id="city" maxlength="25" required/>
                 </label>
 
                 <label class="rowLabel">
                   <p>Province</p>
-                  <input type="text" name="province" class="province" id="province" />
+                  <input type="text" name="province" class="province" id="province" maxlength="25" required />
                 </label>
 
                 <label class="rowLabel">
                   <p>ZIP code</p>
-                  <input type="text" name="zipCode" class="zipCode" id="zipCode" />
+                  <input type="text" name="zipCode" class="zipCode" id="zipCode" maxlength="6" required/>
                 </label>
 
                 <label class="rowLabel">
                   <p>Country</p>
-                  <input type="text" name="country" class="country" id="country"/>
+                  <input type="text" name="country" class="country" id="country" required/>
                 </label>
 
                 <label class="rowLabel">
                   <p>Highschool</p>
-                  <input type="text" name="highschool" class="highschool" id="highschool" />
+                  <input type="text" name="highschool" class="highschool" id="highschool" required/>
                 </label>
               </div>
             </div>
@@ -150,36 +150,36 @@
               <div class="loginFields">
                 <label class="rowLabel">
                   <p>English</p>
-                  <input type="text" name="english" class="english" id="englishMark" />
+                  <input type="text" name="english" class="english" id="englishMark" maxlength="2" required/>
                 </label>
 
                 <label class="rowLabel">
                   <p>First Additional Language</p>
-                  <input type="text" name="firstAddLang" class="firstAddLang" id="firstAddLangMark" />
+                  <input type="text" name="firstAddLang" class="firstAddLang" id="firstAddLangMark" maxlength="2" required />
                 </label>
                 <label class="rowLabel">
                   <p>Maths/Maths Lit</p>
-                  <input type="text" name="maths" class="maths" id="mathMark" />
+                  <input type="text" name="maths" class="maths" id="mathMark" maxlength="2" required />
                 </label>
 
                 <label class="rowLabel">
                   <p>Sciences</p>
-                  <input type="password" name="sciences" class="sciences" id="scienceMark" />
+                  <input type="text" name="sciences" class="sciences" id="scienceMark" maxlength="2"  required/>
                 </label>
 
                 <label class="rowLabel">
                   <p>Extra 1</p>
-                  <input type="password" name="extra1" class="extra1" id="extra1Mark" />
+                  <input type="text" name="extra1" class="extra1" id="extra1Mark" maxlength="2" required/>
                 </label>
 
                 <label class="rowLabel">
                   <p>Extra 2</p>
-                  <input type="text" name="extra2" class="extra2" id="extra2Mark" />
+                  <input type="text" name="extra2" class="extra2" id="extra2Mark" maxlength="2" required/>
                 </label>
 
                 <label class="rowLabel">
                   <p></p>
-                  <a onclick="nextPage2()" class="btnNext-1">Next</a>
+                  <a onclick="nextPage2()" type="submit" class="btnNext-1">Next</a>
                 </label>
               </div>
             </div>
@@ -247,7 +247,7 @@
 
                 <label class="agreeBtn">
                   <p></p>
-                  <a class="btnNext-1" id="btnAgree">Agree</a>
+                  <a class="btnNext-1" type="submit" id="btnAgree">Agree</a>
                 </label>
               </div>
             </div>
