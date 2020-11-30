@@ -5,6 +5,7 @@
   
     <link rel="stylesheet" href="../css/mainScreen.css" />
     <link rel="stylesheet" href="./css/adminReviewPage.css" />
+    <link rel="stylesheet" href="css/loadingStatus.css" />
     
 
     <title>Academia Admin View</title>
@@ -79,7 +80,7 @@
           <div class="regHeader">
             <h1>Applicant Review</h1>
           </div>
-          <div class="registerGrid-1" id="registerGrid-1">
+          <!-- <div class="registerGrid-1" id="registerGrid-1">
             <div class="leftInnerContainer">
               <div class="loginFields">
                 <label class="rowLabel">
@@ -96,7 +97,7 @@
                   <input type="text" name="email" class="email" id="email" disabled="disabled"  />
                 </label>
 
-                <!-- <label class="rowLabel">
+                <label class="rowLabel">
                   <p>Password</p>
                   <input type="password" name="password" class="password" id="password" />
                 </label>
@@ -107,7 +108,7 @@
                     type="password"
                     name="passwordConfirm"
                     class="passwordConfirm" id="passwordConfirm"
-                  /> -->
+                  />
                 </label>
 
                 <label class="rowLabel">
@@ -128,10 +129,10 @@
 
                 
 
-                <!-- <label class="rowLabel">
+                <label class="rowLabel">
                   <p></p>
                   <a onclick="nextPage1()" class="btnNext-1">Next</a>
-                </label> -->
+                </label>
               </div>
             </div>
 
@@ -171,7 +172,7 @@
                 </label>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
 
         <!-- @* Student Marks Page *@ -->
@@ -179,7 +180,15 @@
             <div class="regHeader">
                 <h2>Student's Marks</h2>
               </div>
-          <div class="registerGrid-2" id="registerGrid-2">
+
+              <div id="loadStatus" style="font-size: larger;">
+      
+              </div>
+
+
+
+
+          <!-- <div class="registerGrid-2" id="registerGrid-2">
             <div class="leftInnerContainer">
               <div class="loginFields">
                 <label class="rowLabel">
@@ -233,7 +242,7 @@
                 </label>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
 
         
@@ -247,6 +256,6 @@
     <script src="js/api/auth-service.js"></script>
     <script src="js/helpers/user-auth-helper.js"></script>
     <script src="js/site.js"></script>
-    <script src="js/auth/register.js"></script>
+    <script src="js/user/adminAccepting.js"></script>
   </body>
 </html>
