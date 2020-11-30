@@ -20,7 +20,13 @@ $(document).ready(async function() {
             
             //Make 2nd API Call for username and course
             // .value for inputs and .text for labels
-            $('#course').text(course.code);
+
+            console.log(UserAuthHelper.getUserType());
+
+            if (UserAuthHelper.getUserType() !== 'student')
+                $('.courseInfo').hide();
+            else
+                $('#course').text(course.code);
             $('#studentNumber').text(username);
             $('#currentEmail').val(email);
 
