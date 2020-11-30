@@ -24,34 +24,24 @@ const userType = UserAuthHelper.getUserType();
  else{
 
     if(userId!=null){
-
         console.log(userId);
         console.log(userType);
         
-        
         if(userType == "student"){
-
             console.log("This is a student");
             navS.style.display = "grid";
-            
         }
         else if(userType == "lecturer"){
-
             console.log("This is a lecturer");
             navL.style.display = "grid";
         }
         else if(userType == "admin"){
-
             console.log("This is an admin");
             navA.style.display = "grid";
         }
-    }
-    
-    
-    else{
-
+    } else{
         userId = "kicked from page"
-        window.location.href = 'index.html';
+        // window.location.href = 'index.html';
         
     }
  }
@@ -72,7 +62,3 @@ const userType = UserAuthHelper.getUserType();
 if (typeof ApiService !== 'undefined') api = ApiService.getInstance();
 if (typeof AuthService !== 'undefined') auth = AuthService.getInstance();
 // console.log(UserAuthHelper.getUserId());
-
-
-
-

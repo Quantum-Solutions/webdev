@@ -47,9 +47,9 @@ label {
   margin-bottom: 20px;
   width: 112vh;
   height: 49.5vh;
-  border: black;
-  border-style: solid;
-  border-width: thin;
+  /* border: black; */
+  /* border-style: solid; */
+  /* border-width: thin; */
 }
 
 #moduleContainer {

@@ -9,7 +9,7 @@ $(document).ready(async function() {
               <thead>
                 <th>Module Name</th>
                 <th>Module Code</th>
-                
+                <th>Posts</th>
               </thead>
               <tbody>
                 ${response.data.map(v => {
@@ -17,7 +17,7 @@ $(document).ready(async function() {
                     <tr>
                       <td>${v.name}</td>
                       <td>${v.code}</td>
-                      
+                      <td><a style="color: white" href="/posts.html?moduleId=${v.id}">View Posts</a></td>
                     </tr>
                   `;
                 })}

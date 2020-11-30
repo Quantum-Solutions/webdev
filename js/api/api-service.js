@@ -45,6 +45,7 @@ class ApiService {
 	getTimetable = async (id) => this.doRequest('GET', `users/${id}/timetable`);
 	getClassRegister = async (id) => this.doRequest('GET', `modules/${id}/register`);
 	getPosts = async (id) => this.doRequest('GET', `modules/${id}/posts`);
+	getLecturerModules = async (id) => this.doRequest('GET', `users/${id}/lecturermodules`)
 
 	//Post Calls
 	postPosts = async (id) => this.doRequest('POST', `modules/${id}/posts`);

@@ -1,34 +1,29 @@
-let response;
+const getLecturerModules = async () => {
+  try {
+    console.log(123);
+    const response = await api.getLecturerModules(UserAuthHelper.getUserId());
+
+    console.log(response);
+
+    if (response.ok) {
+      moduleId = response.data[0].id;
+    
+      console.log(12, moduleId)
+    }
+  } catch (err) {
+    console.log(err);
+  }
+}
+
+getLecturerModules();
+
+let moduleId;
+
 $(document).ready(async function() {
     try {
-        const id = UserAuthHelper.getUserId();
-        const response = await api.getClassRegister(id);
+        const response = await api.getClassRegister(moduleId);
         
         if(response.ok){
-        //    response = JSON.parse(`{
-        //     "ok": true,
-        //     "data": [
-        //         {
-        //             "username": "179258421",
-        //             "firstName": "Keegan",
-        //             "lastName": "Launspach",
-        //             "attended": true
-        //         },
-        //         {
-        //             "username": "183005472",
-        //             "firstName": "Jared",
-        //             "lastName": "Govender",
-        //             "attended": true
-        //         },
-        //         {
-        //             "username": "170845789",
-        //             "firstName": "Aaron",
-        //             "lastName": "Garton",
-        //             "attended": true
-        //         }
-        //     ]
-        // }`);
-
             const table = `
             <table border="1">
               <thead>
@@ -56,7 +51,6 @@ $(document).ready(async function() {
 
           $('#loadStatus').hide();
           $('#classReg').show();
-          
         }
         else{
             console.log('Not working')
@@ -67,7 +61,3 @@ $(document).ready(async function() {
         console.log(error);
     }
 });
-
-
-
-
