@@ -89,7 +89,7 @@ select {
   height: fit-content;
 }
 
-.createPostBtn {
+#createPostBtn {
   background: #3561dc;
   margin: 0 auto;
   color: #ffffff;
@@ -97,6 +97,11 @@ select {
   padding: 9px 75px;
   font-size: 17px;
   margin-left: 12vh;
+}
+
+#createPostBtn:hover {
+  cursor: pointer !important;
+  background: #5179e9 !important;
 }
 
 .postHeader h2 {
