@@ -1,9 +1,5 @@
 $(document).ready(async function() {
-  console.log(document.location.href)
-
   const moduleId = document.location.href.split('?')[1].split('=')[1]
-
-  console.log(moduleId);
 
     try {
         const response = await api.getPosts(moduleId);
@@ -43,49 +39,3 @@ $(document).ready(async function() {
         console.log(error);
     }
 });
-
-
-
-
-$('#createPost').click( async function() {
-  
-  const name = $('#name').val();
-  const body = $('#body').val();
-  const moduleId = $('#module').val();
-  
-  
-  
-	
-  const post = { name, body, moduleId };
-  
-  try {
-    const response = await api.postPosts(post);
-    console.log(response);
-
-   
-
-      if (response.ok) {
-
-        window.location.href = 'posts.html';
-        
-      } 
-      else {
-
-        $('#message').text(response.message);
-
-      }
-      console.log(response);
-
-  } catch (err) {
-
-    console.log(err);
-    $('#message').text('Invalid email/password');
-    console.log('fail');
-  }  
-
-});
-
-
-
-
-

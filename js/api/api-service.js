@@ -49,8 +49,10 @@ class ApiService {
 	getLecturerModules = async (id) => this.doRequest('GET', `users/${id}/lecturermodules`)
 
 	//Post Calls
-	postPosts = async (id) => this.doRequest('POST', `modules/${id}/posts`);
+	postPosts = async (post) => this.doRequest('POST', `modules/${post.moduleId}/posts`, post);
 
 	//Put Calls
 	putProfile = async (id, user) => this.doRequest('PUT', `users/${id}`, user);
+	updateClassRegister = async (moduleId, classRegister) => this.doRequest('PUT', `modules/${moduleId}/register`, classRegister);
+	acceptStudent = async (id) => this.doRequest('PUT', `users/${id}/accept`)
 }

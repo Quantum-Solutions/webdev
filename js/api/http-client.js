@@ -27,6 +27,8 @@ class HttpClient {
 	static async post(endpoint, headers = {}, body = {}) {
 		body = JSON.stringify(body);
 
+		console.log(body);
+
 		const request = new Request(endpoint, {
 			body,
 			headers,

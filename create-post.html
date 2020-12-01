@@ -1,14 +1,19 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="js/user/validateUser.js"></script>
     <link rel="stylesheet" href="css/mainScreen.css" />
-    <link rel="stylesheet" href="css/lectDetails.css" />
+    <link rel="stylesheet" href="css/posts.css" />
     <link rel="stylesheet" href="css/loadingStatus.css" />
-
   
-    <title>Academia Details</title>
+  
+    <title>Academia Posts</title>
   </head>
-  <body class="homepageBack">
+  <body class="homepageBack" onload="validateLectBtn()">
+    
     <div class="navbarSpacing">
       <!-- <div class="navContainer">
         <div class="navBar">
@@ -40,6 +45,16 @@
         <div class="botNavSvg">
           <img src="images/svgs/navBar.svg" />
         </div>
+  <div>
+    <div id="classReg">
+      <div class="classRegHeader">
+      <h2>Class Register</h2>
+    </div>
+  
+    </div>
+  </div>
+        
+        
       </div> -->
       <div style="display: none;" class="navContainer" id="studentNav">
         <div class="navBar">
@@ -72,7 +87,8 @@
           <img src="images/svgs/navBar.svg" />
         </div>
       </div>
-  
+      
+      
       <div style="display: none;" class="navContainer" id="lecturerNav">
         <div class="navBar">
           <div class="leftnavSect">
@@ -84,7 +100,7 @@
   
           <div class="rightNavBar">
             <div class="navLeftBtns">
-              <a href="create-post.html">Create Post</a>
+              <a href="posts.html">Create Post</a>
               <a href="lect-register.html">Class Register</a>
              
             </div>
@@ -103,55 +119,50 @@
           <img src="images/svgs/navBar.svg" />
         </div>
       </div>
-    </div>
-<div class="lectDetailsContainer" style="display: none;">
-  <div class="lectDetailsHeader">
-    <h2>Lecturer Details</h2>
-  </div>
-  <form>
-    <p id="message"></p>
 
-    <div class="detailFields">
-      <label>
-        <label class="rowLabel">
-          <p>Name:</p>
-          <input type="text" name="firstName" class="firstName" id ="firstName" />
-        </label>
-      </label>
-
-      <label>
-        <label class="rowLabel">
-          <p>Email:</p>
-          <input type="text" name="email" class="email" id ="email" />
-        </label>
-      </label>
     </div>
-  </form>
-<div class="notice">
-  <p style="color: red; float: left;">Note : </p>
-  <p style="margin-left: 6vh; color: #e2e2e2;">All appointments made with a lecturer must be done
-    via the above email provided.</p>
-</div>
-  
-</div>
-<div id="loadStatus" style="font-size: larger;">
-      
-</div>
-
-    <div id="moduleContainer">
-        <img id="moduleForeground" src="images/svgs/moduleForeground.svg" />
-    </div>
-  
    
-  
+    <div id="loadStatus" style="font-size: larger;">
+      
+    </div>
+    
+    <div id="moduleContainer" style="display: none">
+      <div class="createContainer">
+        <form class="createPost" id="createPost">
+          Name: <input type="text" name="name" class="name" id="name" /><br /><br />
+          Body: <textarea id="body"></textarea><br /><br />
+          Module: <select id="modules"></select><br /><br />
+
+          <button id="createPostBtn" type="button">Create</button>
+          </form>
+      </div>
+
+      </div>
+        <div class="postHeader">
+            <h2>Posts</h2>
+        </div>
+
+        <div class="panel-group" id="accordion"></div>
+        </div>
+        
+        <div id="moduleInfo">
+          <div class="moduleHeader">
+          <!-- <h2>My Modules</h2> -->
+        </div>
+
+        </div>
+    </div>
+    
     <script src="lib/jquery/dist/jquery.min.js"></script>
     <script src="lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/api/http-client.js"></script>
-    <script src="js/api/auth-service.js"></script>
+    <script src="js/api/api-service.js"></script>
+   
+    <script src="js/auth/login.js"></script>
     <script src="js/helpers/session-storage-helper.js"></script>
-  <script src="js/helpers/jwt-token-helper.js"></script>
+    <script src="js/helpers/jwt-token-helper.js"></script>
     <script src="js/helpers/user-auth-helper.js"></script>
     <script src="js/site.js"></script>
-    <script src="js/user/lect-details.js"></script>
+    <script src="js/user/create-post.js"></script>
   </body>
   
