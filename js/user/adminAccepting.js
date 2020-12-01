@@ -10,25 +10,23 @@ $(document).ready(async function() {
               <thead>
                 <th>Name</th>
                 <th>Email</th>
-                <th>isAccepted</th>
                 <th>Eng / FAL / Maths / Sciences / Extra 1 / Extra 2</th>
+                <th>Action</th>
               </thead>
               <tbody>
                 ${response.data.map((v, i) => {
                   const { id, firstName, lastName, email, highSchoolMarks } = v;
-
-                  console.log('marks', highSchoolMarks);
 
                   return `
                     <tr data-id="${id}">
                       <td>${firstName} ${lastName}</td>
                       <td>${email}</td>
                       <td>
+                        ${highSchoolMarks[0].mark} / ${highSchoolMarks[1].mark} / ${highSchoolMarks[2].mark} / ${highSchoolMarks[3].mark} / ${highSchoolMarks[4].mark} / ${highSchoolMarks[5].mark}
+                      </td>
+                      <td>
                         <a href="javascript:void(0)" onclick="acceptStudent('${id}', ${i}); this.innerText = 'Accepting...'">Accept</a>
                       </td>
-                        <td>
-                          ${highSchoolMarks[0].mark} / ${highSchoolMarks[1].mark} / ${highSchoolMarks[2].mark} / ${highSchoolMarks[3].mark} / ${highSchoolMarks[4].mark} / ${highSchoolMarks[5].mark}
-                        </td>
                     </tr>
                   `;
                 })}
