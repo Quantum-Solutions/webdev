@@ -10,9 +10,9 @@
     <link rel="stylesheet" href="css/loadingStatus.css" />
   
   
-    <title>Academia Login</title>
+    <title>Academia Posts</title>
   </head>
-  <body class="homepageBack" onload="validateLect()">
+  <body class="homepageBack" onload="validateLectBtn()">
     
     <div class="navbarSpacing">
       <!-- <div class="navContainer">
@@ -87,17 +87,9 @@
           <img src="images/svgs/navBar.svg" />
         </div>
       </div>
-      <div class="createContainer">
-        <div class="createPost" id="createPost">
-          <button>CREATE POST!!!</button>
-          <input type="text" name="name" class="name" id="name" />
-          <input type="text" name="body" class="body" id="body" />
-          <input type="text" name="module" class="module" id="module" />
-      </div>
-
-      </div>
       
-      <div class="navContainer" id="lecturerNav">
+      
+      <div style="display: none;" class="navContainer" id="lecturerNav">
         <div class="navBar">
           <div class="leftnavSect">
             <a href="homepage.html" class="logo"
@@ -133,7 +125,17 @@
     <div id="loadStatus" style="font-size: larger;">
       
     </div>
+    
     <div id="moduleContainer" style="display: none">
+      <div class="createContainer">
+        <!-- <div class="createPost" id="createPost">
+          <button id="createPostBtn">CREATE POST!!!</button>
+          <input type="text" name="name" class="name" id="name" />
+          <input type="text" name="body" class="body" id="body" />
+          <input type="text" name="module" class="module" id="module" />
+      </div> -->
+
+      </div>
         <div class="postHeader">
             <h2>Posts</h2>
         </div>

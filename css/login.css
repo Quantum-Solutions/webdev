@@ -90,6 +90,10 @@ label {
   background: #3561dc;
   margin-right: 3vh;
 }
+.btnLogin:hover {
+  cursor: pointer !important;
+  background: #5179e9 !important;
+}
 
 .btnForgot {
   font-size: 18px;
