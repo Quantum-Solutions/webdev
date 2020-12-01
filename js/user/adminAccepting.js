@@ -1,6 +1,6 @@
 $(document).ready(async function() {
     try {
-        const id = UserAuthHelper.getUserId();
+        //const id = UserAuthHelper.getUserId();
         const response = await api.getNotAccepted();
 
         if(response.ok){
