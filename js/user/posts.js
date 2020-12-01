@@ -27,7 +27,8 @@ $(document).ready(async function() {
           div.append(table);
 
           $('#loadStatus').hide();
-          $('#moduleContainer').show();
+          $('#mainPostContainer').show();
+          $('#postHeader').show();
           
         }
         else{

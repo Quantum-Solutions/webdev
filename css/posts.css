@@ -44,7 +44,7 @@ label {
 }
 
 .panel-group {
-  margin-bottom: 20px;
+  margin: 12% 7% 0% 6.6%;
   width: 112vh;
   height: 49.5vh;
   /* border: black; */
@@ -52,11 +52,56 @@ label {
   /* border-width: thin; */
 }
 
+.panel-title {
+  font-family: Tahoma !important;
+  font-size: 20px !important;
+}
+
+.panel-heading {
+  background: #ffe0c0 !important;
+}
+
+.panel-body {
+  background: #fdfdfd !important;
+}
+
 #moduleContainer {
   display: grid;
   grid-template-columns: 0.4fr;
-  margin: 3.8% 0 0 9.2%;
+  margin: 3.8% 0 0 6.6%;
   /* column-gap: 9vh; */
   grid-row-gap: 2vh;
-  height: 80vh;
+}
+
+.createContainer input,
+textarea,
+select {
+  font-size: 18px;
+  padding: 6px 5px;
+  border: #6b6b6b;
+  border-style: solid;
+  border-width: 2px;
+  margin-top: 2vh;
+  width: 38vh;
+}
+
+.createContainer {
+  height: fit-content;
+}
+
+.createPostBtn {
+  background: #3561dc;
+  margin: 0 auto;
+  color: #ffffff;
+  font-family: Tahoma;
+  padding: 9px 75px;
+  font-size: 17px;
+  margin-left: 12vh;
+}
+
+.postHeader h2 {
+  font-size: 62px;
+  font-family: Nirmala UI;
+  font-weight: 300;
+  color: #5d5d5d;
 }
