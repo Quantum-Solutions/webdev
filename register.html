@@ -48,13 +48,14 @@
         <div class="container">
           <div class="regHeader">
             <h1>Student Registration</h1>
+            <p id="regError" style="color: black;"></p>
           </div>
           <div class="registerGrid-1" id="registerGrid-1">
             <div class="leftInnerContainer">
               <div class="loginFields">
                 <label class="rowLabel">
                   <p>First Name</p>
-                  <input type="text" name="firstName" class="firstName" id="firstName" maxlength="25" required />
+                  <input type="text" name="firstName" class="firstName" id="firstName"  maxlength="25" required />
                 </label>
 
                 <label class="rowLabel">
@@ -96,7 +97,7 @@
 
                 <label class="rowLabel">
                   <p></p>
-                  <a onclick="nextPage1()" type="submit" class="btnNext-1">Next</a>
+                  <a onclick="vaildateRegister1()" type="submit" class="btnNext-1">Next</a>
                 </label>
               </div>
             </div>
@@ -179,7 +180,7 @@
 
                 <label class="rowLabel">
                   <p></p>
-                  <a onclick="nextPage2()" type="submit" class="btnNext-1">Next</a>
+                  <a onclick="vaildateRegister2()" type="submit" class="btnNext-1">Next</a>
                 </label>
               </div>
             </div>
@@ -265,5 +266,6 @@
     <script src="js/helpers/user-auth-helper.js"></script>
     <script src="js/site.js"></script>
     <script src="js/auth/register.js"></script>
+    <script src="js/user/formValidation.js"></script>
   </body>
 </html>
