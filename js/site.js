@@ -41,7 +41,7 @@ const userType = UserAuthHelper.getUserType();
         }
     } else{
         userId = "kicked from page"
-        // window.location.href = 'index.html';
+        window.location.href = 'index.html';
         
     }
  }
