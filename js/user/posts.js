@@ -43,3 +43,49 @@ $(document).ready(async function() {
         console.log(error);
     }
 });
+
+
+
+
+$('#createPost').click( async function() {
+  
+  const name = $('#name').val();
+  const body = $('#body').val();
+  const moduleId = $('#module').val();
+  
+  
+  
+	
+  const post = { name, body, moduleId };
+  
+  try {
+    const response = await api.postPosts(post);
+    console.log(response);
+
+   
+
+      if (response.ok) {
+
+        window.location.href = 'posts.html';
+        
+      } 
+      else {
+
+        $('#message').text(response.message);
+
+      }
+      console.log(response);
+
+  } catch (err) {
+
+    console.log(err);
+    $('#message').text('Invalid email/password');
+    console.log('fail');
+  }  
+
+});
+
+
+
+
+
